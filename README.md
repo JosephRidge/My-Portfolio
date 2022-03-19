@@ -11,25 +11,27 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 # Tailwind CSS
 
-`npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p`
+* `npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p`
 
 Tailwind.config.js
 
-`module.exports = { content: [ "./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}", ], theme: { extend: {}, }, plugins: [], }`
+* `module.exports = { content: [ "./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}", ], theme: { extend: {}, }, plugins: [], }`
 
 # Formatter
 
-Prettier Package : `npm install --save-dev --save-exact prettier `
+Prettier Package : 
+* `npm install --save-dev --save-exact prettier `
 
 Create a config file for Prettier :
-`echo {}> .prettierrc.json`
+* `echo {}> .prettierrc.json`
 
 Set up Eslint :
 Install :
-`npm install --save-dev eslint eslint-plugin-vue `
-Configure ESlint :
-create .elintrc.js : `└──╼ $echo {}> .eslintrc.js` with the Configuration below
-'module.exports = {
+* `npm install --save-dev eslint eslint-plugin-vue `
+
+Configure ESlint ( *create .elintrc.js* ) :
+*  `$echo {}> .eslintrc.js` with the Configuration below
+* `'module.exports = {
 env: {
 node: true,
 },
@@ -41,18 +43,18 @@ rules: {
 // override/add rules settings here, such as:
 // 'vue/no-unused-vars': 'error'
 }
-}'
+}'`
 
 Turn off conflicting ESlint config rules that would affect Prettier, by installing eslint-config-prettier :
-`npm install eslint-config-prettier --save-dev `
+* `npm install eslint-config-prettier --save-dev `
 
 Configuration at .eslintrc.js
-`//.eslintrc.js extends: [ 'eslint:recommended', "plugin:vue/vue3-recommended", "prettier" ],`
-th abpve configuration should be tghe last thing defined in th extends array
+* ` extends: [ 'eslint:recommended', "plugin:vue/vue3-recommended", "prettier" ],`
+the above configuration should be tghe last thing defined in th extends array
 
-in `Package.json` add the fllowing under scripts:
-"lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
-"format": "prettier . --write"
+in *Package.json* add the following under scripts:
+* `"lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",`
+* `"format": "prettier . --write"`
 
 
 Configure Format on Save : 
@@ -65,5 +67,6 @@ Configure Format on Save :
 ![Screenshot at 2022-03-20 00-49-43](https://user-images.githubusercontent.com/42699812/159139535-aed71b43-0a9c-49f0-bcbf-116490e0d9fd.png)
 
 ## Solution : 
-git remove -v
-git remote set-url origin https://github.com/{{yourUserName}}/{{YourRepoName}}.git/
+* `git remove -v` 
+
+* `git remote set-url origin https://github.com/{{yourUserName}}/{{YourRepoName}}.git/`
