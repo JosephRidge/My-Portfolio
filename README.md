@@ -57,3 +57,13 @@ in `Package.json` add the fllowing under scripts:
 
 Configure Format on Save : 
 ![Screenshot at 2022-03-20 00-38-08](https://user-images.githubusercontent.com/42699812/159139212-e03f3b2a-9f0a-4ba8-9ff1-1c1fb0b05571.png)
+
+
+
+
+# Errors : 
+![Screenshot at 2022-03-20 00-49-43](https://user-images.githubusercontent.com/42699812/159139535-aed71b43-0a9c-49f0-bcbf-116490e0d9fd.png)
+
+## Solution : 
+git remove -v
+git remote set-url origin https://github.com/{{yourUserName}}/{{YourRepoName}}.git/
