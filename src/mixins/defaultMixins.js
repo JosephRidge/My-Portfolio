@@ -1,0 +1,1 @@
+// Commonly used Variables. contant values - images or Methods 

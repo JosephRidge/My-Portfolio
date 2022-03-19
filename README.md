@@ -1,4 +1,4 @@
-# Vue 3 + Vite
+# [Vue 3 + Vite](https://vitejs.dev/guide/#trying-vite-online)
 
 installation :
 `$ npm create vite@latest`
@@ -9,7 +9,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
-# Tailwind CSS
+# [Tailwind CSS](https://tailwindcss.com/docs/guides/vite)
 
 * `npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p`
 
@@ -70,3 +70,9 @@ Configure Format on Save :
 * `git remove -v` 
 
 * `git remote set-url origin https://github.com/{{yourUserName}}/{{YourRepoName}}.git/`
+
+
+# UseFull Links : 
+* [Setting up your Code formatter - Prettier by kiran.jasvanee-Medium](https://medium.com/@kiran.jasvanee/prettier-auto-formatting-in-visual-studio-code-beab1c026b13) 
+
+* [Setting Up a formatter and a linter](https://vueschool.io/articles/vuejs-tutorials/eslint-and-prettier-with-vite-and-vue-js-3/)
