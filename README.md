@@ -61,8 +61,38 @@ Configure Format on Save :
 ![Screenshot at 2022-03-20 00-38-08](https://user-images.githubusercontent.com/42699812/159139212-e03f3b2a-9f0a-4ba8-9ff1-1c1fb0b05571.png)
 
 
+Ability to run on / test using external device not local host :
+This is achieved through running vite --host, however this can not be run directly hence in the package.json file under  the scripts object alter the dev value from '`vite`' to `'vite --host'`
+```
+"scripts": {
+    "dev": "vite --host ",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "format": "prettier .  --write"
+  },
+```
 
+# Vue Router Setup
+Installing using npm  : `npm install vue-router@4 --save`
+* Import createRouter in the main.js file : `import { createRouter,createWebHashHistory } from "vue-router";`
 
+*  Create Routes and an instance of the routes 
+```
+const routes = [
+  { path: "/", component: HomePage },
+  { path: "/home", component: HomePage },
+  { path: "/projects", component: ProjectsDone },
+  { path: "/blog", component: Blog },
+  { path: "/about", component: About },
+];
+
+const router = createRouter({
+    // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
+    history: createWebHistory(),
+    routes, // short for `routes: routes`
+  })
+```
 # Errors : 
 ![Screenshot at 2022-03-20 00-49-43](https://user-images.githubusercontent.com/42699812/159139535-aed71b43-0a9c-49f0-bcbf-116490e0d9fd.png)
 
@@ -72,7 +102,7 @@ Configure Format on Save :
 * `git remote set-url origin https://github.com/{{yourUserName}}/{{YourRepoName}}.git/`
 
 
-# UseFull Links : 
+# Usefull Links : 
 * [Setting up your Code formatter - Prettier by kiran.jasvanee-Medium](https://medium.com/@kiran.jasvanee/prettier-auto-formatting-in-visual-studio-code-beab1c026b13) 
 
 * [Setting Up a formatter and a linter](https://vueschool.io/articles/vuejs-tutorials/eslint-and-prettier-with-vite-and-vue-js-3/)
