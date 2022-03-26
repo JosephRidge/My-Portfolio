@@ -33,6 +33,14 @@
         </div>
       </div>
     </div>
+    <!-- Part 2 introduction  -->
+    <div class="flex  bg-primary h-screen">
+    <!-- left side : About Me Title  -->
+    <div class=" w-1/2 my-auto flex justify-center text-6xl">About  </div>
+    <!--  Right side : About Me Content -->
+    <div class="  w-1/2 bg-white ">dtgdrfrydh </div>
+    </div>
+             
   </div>
 </template>
 
