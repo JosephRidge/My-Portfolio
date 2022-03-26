@@ -18,7 +18,7 @@
        p-2 hover:hidden   ">
           <img
             src="src/assets/Logo.svg"
-            class=""
+            class="w-1/5"
             alt="Joseph Ridge logo"
             srcset=""
           />
