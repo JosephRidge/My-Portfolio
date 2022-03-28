@@ -40,13 +40,57 @@
         About
       </div>
       <!--  Right side : About Me Content -->
-      <div class="w-1/2 bg-white p-2 text-gray-500">
-        <h1 class="mx-4 capitalize mt-4 font-bold text-black">{{ whatamI }}</h1>
-        <p class="mx-5 my-3 text-justify">{{ whoamI }}</p>
-        <p class="mx-5 my-3 text-justify">{{ mypassion }}</p>
-        <p class="mx-5 my-3 text-justify">{{ myadavantage }}</p>
-        <p class="mx-5 my-3 text-justify">{{ myideal }}</p>
-        <p class="mx-5 my-3 text-justify">{{ collaborate }}</p>
+      <div class="w-1/2  bg-white py-2 px-5 text-gray-600">
+        <h1 class="mx-10 capitalize mt-4 font-bold text-black">
+          {{ whatamI }}
+        </h1>
+        <p class="mx-10 my-3 text-justify">{{ whoamI }}</p>
+
+        <div class="flex">
+          <!-- Mobile Applications -->
+          <div class="w-1/2 h-52 bg-green-100 py-2 hover:shadow-lg	">
+            <h1 class="mx-4 text-black capitalize text-base text-center py-1">
+              Mobile Applications Development
+            </h1>
+            <p class="mx-10 my-3 text-justify text-sm">{{ mypassion }}</p>
+          </div>
+          <!-- UI/UX design -->
+          <div class="w-1/2 h-52 bg-pink-100 py-2 hover:shadow-lg">
+            <h1 class="mx-4 text-black capitalize text-center text-base py-1">
+              UI / UX Design
+            </h1>
+            <p class="mx-10 my-3 text-justify text-sm">{{ myuiux }} gsdgsgf</p>
+          </div>
+          <!-- <p class="mx-10 my-3 text-justify ">{{ myideal }}</p> -->
+        </div>
+        <div class="flex">
+          <!-- My Skills -->
+          <div class="w-1/2 h-28 bg-pink-100 py-2 hover:shadow-lg">
+            <h1 class="mx-4 text-black capitalize text-center text-base py-1">
+              My Skills
+            </h1>
+            <p class="mx-10 my-3 text-justify text-sm">{{ myskills }}</p>
+          </div>
+          <!-- Collaboration thoughts -->
+          <div class="w-1/2 h-52 bg-green-100 py-2 hover:shadow-lg">
+            <h1 class="mx-4 text-black capitalize text-center text-base py-1">
+              My thoughts on Collaboration
+            </h1>
+            <h1 class="mx-10 my-3 text-justify text-sm">{{ collaborate }}</h1>
+          </div>
+        </div>
+        <!-- <div class="rounded bg-green-400 text-justify text-white p-2"> How i approach and implement projects</div> -->
+
+        <!-- Gratitude -->
+        <div>
+          <h1 class="mx-10 text-black capitalize">Gratitude</h1>
+          <p class="mx-10 my-3 text-justify">
+            I have been privilaged to be part of great teams that have greatly
+            contributed to my growth as a software engineer and UI/UX designer
+            especially team from @iLabAfrica, AO Technology and most importantly
+            my family.
+          </p>
+        </div>
       </div>
     </div>
   </div>
