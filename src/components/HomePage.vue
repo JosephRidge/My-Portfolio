@@ -1,5 +1,6 @@
 <template>
   <div class="bg-primary w-screen h-screen static">
+
     <!-- background -->
     <div class="transition duration-300 ease-in-out">
       <img
@@ -32,10 +33,10 @@
       </div>
     </div>
     <!-- Part 2 introduction  -->
-    <div class="flex bg-primary h-screen">
+    <div class="flex bg-guy-image h-screen">
       <!-- left side : About Me Title  -->
       <div
-        class="w-1/2 my-auto flex justify-center text-6xl text-gray-100 font-bold"
+        class="  w-1/2 my-auto flex justify-center text-6xl text-gray-100 font-bold"
       >
         About
       </div>
@@ -89,7 +90,14 @@
             contributed to my growth as a software engineer and UI/UX designer
             especially team from @iLabAfrica, AO Technology and most importantly
             my family.
+
+     
           </p>
+          <!-- TODO: Remove Image once done testing -->
+           <div class="bg-bike-engine w-28 h-28">fnsklngklsngklns
+        <img src="/src/assets/motocycle.jpg" class="w-28 h-28 " alt="sg hgd h " srcset=""/>
+    
+      </div>
         </div>
       </div>
     </div>
