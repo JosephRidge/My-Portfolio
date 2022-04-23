@@ -7,19 +7,19 @@
     <div class="py-4">
       <img
         src="src/assets/MyWork.svg"
-        class="   "
+        class=" mx-32  w-56 h-14"
         alt="My Work logo"
         srcset=""
         loading="lazy"
       />
     </div>
     <!-- work section -->
-    <div class="flex ">
+    <div class="flex h-screen ">
       <!-- left arrow -->
-      <div class="flex justify-center my-auto ">
+      <div class=" m-auto ">
         <img
           src="src/assets/leftArrow.svg"
-          class="   "
+          class="ml-10 "
           alt=" left pointing arrow logo"
           srcset=""
           loading="lazy"
@@ -27,8 +27,8 @@
       </div>
 
       <!-- center content -->
-      <div class="grid grid-cols-2">
-      <div class="mx-10 bg-secondaryLighterBlue p-3">
+      <div class="grid grid-cols-2 w-10/12 bg-secondaryLighterBlue rounded-xl mb-28 mx-7 ">
+      <div class="p-3">
       <!-- Project Title -->
       <div>Proect Title </div>
       <!-- Project Description -->
@@ -40,11 +40,11 @@
       </div>
 
       <!-- right arrow -->
-      <div>
+      <div class=" m-auto  ">
         <img
           src="src/assets/rightArrow.svg"
-          class="absolute right-0  "
-          alt=" right pointing arrow logo"
+          class=" mr-10  "
+          alt="right pointing arrow logo"
           srcset=""
           loading="lazy"
         />
