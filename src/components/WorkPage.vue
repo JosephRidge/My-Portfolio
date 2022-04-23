@@ -1,7 +1,7 @@
 <template> 
-<div class="h-screen">
+<div class="h-screen bg-primaryBlue">
 <!-- Top Nav -->
-  <div> dgkjabfkabskb </div>
+  <div class="mx-5"> <NavigationBar class="text-white"/> </div>
   <!-- my title -->
   <div></div>
   <!-- work section -->
@@ -11,8 +11,9 @@
 </template>
 
 <script>
+import NavigationBar from "./NavigationBar.vue";
 export default {
-
+    components: { NavigationBar }
 }
 </script>
 

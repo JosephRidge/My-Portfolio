@@ -1,4 +1,4 @@
-<template  >
+<template>
   <div class="w-screen h-screen static" loading="lazy">
     <!-- background -->
     <div class="transition duration-300 ease-in-out grid grid-cols-2">
@@ -23,7 +23,7 @@
             experience a snapshot of my dev journey ! A Junior Android
             developer.
           </div>
-          <button       
+          <button
             class="text-xl text-primaryBlue font-medium rounded transition duration-700 ease-in-out hover:underline hover:underline-offset-8 p-2"
           >
             About Me.
@@ -41,7 +41,7 @@
           />
         </div>
         <a
-        href="#workSection"
+          href="#workSection"
           class="scroll-smooth absolute flex flex-row w-auto h-auto border border-2 border-white rounded bottom-0 right-0 m-10"
         >
           <div class="my-2 ml-4 mr-2 text-white font-bold font-roboto">
@@ -58,7 +58,7 @@
         </a>
       </div>
     </div>
-    <WorkPage/>
+    <WorkPage />
     <!-- Part 2 introduction  -->
     <!-- bg-bike-engine  -- >
     <div id="workSection"
@@ -129,7 +129,7 @@
         </div>
       </div>
     
-    </div> --> 
+    </div> -->
   </div>
 </template>
 
@@ -137,8 +137,8 @@
 import defaultMixins from "../mixins/defaultMixins";
 import WorkPage from "./WorkPage.vue";
 export default {
-    mixins: [defaultMixins],
-    components: { WorkPage }
+  mixins: [defaultMixins],
+  components: { WorkPage },
 };
 </script>
 

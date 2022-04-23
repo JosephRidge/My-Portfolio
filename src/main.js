@@ -3,9 +3,10 @@ import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 //import route components
 import HomePage from "./components/HomePage.vue";
-import ProjectsDone from "./components/ProjectsDone.vue";
+import WorkPage from "./components/WorkPage.vue";
 import About from "./components/About.vue";
 import Blog from "./components/Blog.vue";
+import Contact from "./components/ContactForm.vue";
 
 import App from "./App.vue";
 
@@ -15,9 +16,10 @@ import "./style/index.css";
 const routes = [
   { path: "/", component: HomePage },
   { path: "/home", component: HomePage },
-  { path: "/projects", component: ProjectsDone },
+  { path: "/work", component: WorkPage },
   { path: "/blog", component: Blog },
   { path: "/about", component: About },
+  { path: "/contact", component: Contact }
 ];
 
 //create the vue router instance and pass routes as option
