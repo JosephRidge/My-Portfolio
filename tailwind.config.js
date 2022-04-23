@@ -7,7 +7,7 @@ module.exports = {
         secondary:'#FCBCB8',
         primaryBlue:'#195EC7',
         secondaryLightBlue:'#D9F1FF',
-        secondaryLighterBlue:'#D9F1FF',//set opacity
+        secondaryLighterBlue:'#3372D2',//set opacity
         primaryGray:'#EEEEEE',
         secondaryLightGray:'#3C3C3C',
         darkGray:"#3C3D3C"
