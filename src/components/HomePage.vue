@@ -58,7 +58,8 @@
         </a>
       </div>
     </div>
-    <WorkPage />
+    <WorkPage id="workSection" 
+              loading="lazy"/>
     <!-- Part 2 introduction  -->
     <!-- bg-bike-engine  -- >
     <div id="workSection"
