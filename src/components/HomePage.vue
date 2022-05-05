@@ -131,7 +131,8 @@
       </div>
     
     </div> -->
-    <About/>
+    <About class="h-screen"/>
+    <Blog/>
   </div>
 </template>
 
@@ -139,9 +140,10 @@
 import defaultMixins from "../mixins/defaultMixins";
 import WorkPage from "./WorkPage.vue";
 import About from "./About.vue";
+import Blog from "./Blog.vue";
 export default {
   mixins: [defaultMixins],
-  components: { WorkPage, About },
+  components: { WorkPage, About, Blog },
 };
 </script>
 

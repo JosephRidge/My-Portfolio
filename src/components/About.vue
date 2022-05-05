@@ -26,7 +26,7 @@
             {{ tools }}
         </div>
        <div class="my-5 text-lg ">
-            <h2 class="capitalize text-xl my-1 font-normal text-darkGray"> Projects I Love & my personal request</h2>
+            <h2 class="capitalize text-xl my-1 font-normal"> Projects I Love & my personal request</h2>
             {{ mypassion }}
         </div>
 
