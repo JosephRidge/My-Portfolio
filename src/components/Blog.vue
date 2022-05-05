@@ -10,13 +10,71 @@
           srcset=""
           loading="lazy"
         />
-        <div class="capitalize text-5xl text-white font-light   mx-auto my-auto pt-7">
+        <div
+          class="capitalize text-5xl text-white font-light mx-auto my-auto pt-7"
+        >
           Some of My simplified Technical pieces
         </div>
       </div>
     </div>
     <NavigationBar class="text-white" />
-    <div class="mt-10 bg-primaryBlue"></div>
+    <div class="grid grid-cols-3 m-16 justify-center">
+        <!-- item 1 -->
+      <div class="border-2 rounded-xl shadow m-10 p-4 flex flex-col">
+        <div class="font-nunito text-center my-3">MVVM simplified</div>
+        <div
+          class="p-2 bg-primaryBlue rounded-2xl px-6 text-white font-nunito text-center w-max mx-auto hover:cursor-pointer"
+        >
+          <a href=" ">Read ME</a>
+        </div>
+      </div>
+         <!-- item 2 -->
+      <div class="border-2 rounded-xl shadow rounded m-10 p-4 flex flex-col">
+        <div class="font-nunito text-center my-3">Views simplified</div>
+        <div
+          class="p-2 bg-primaryBlue rounded-2xl px-6 text-white font-nunito text-center w-max mx-auto hover:cursor-pointer"
+        >
+          <a href=" ">Read ME</a>
+        </div>
+      </div>
+         <!-- item 3 -->
+      <div class="border-2  rounded-xl shadow m-10 p-4 flex flex-col">
+        <div class="font-nunito text-center my-3">DataBinding simplified</div>
+        <div
+          class="p-2 bg-primaryBlue rounded-2xl px-6 text-white font-nunito text-center w-max mx-auto hover:cursor-pointer"
+        >
+          <a href=" ">Read ME</a>
+        </div>
+      </div>
+         <!-- item 4 -->
+      <div class="border-2  rounded-xl shadow m-10 p-4 flex flex-col">
+        <div class="font-nunito text-center my-3">NodeMCU simplified</div>
+        <div
+          class="p-2 bg-primaryBlue rounded-2xl px-6 text-white font-nunito text-center w-max mx-auto hover:cursor-pointer"
+        >
+          <a href=" ">Read ME</a>
+        </div>
+      </div>
+         <!-- item 5-->
+      <div class="border-2  rounded-xl shadow m-10 p-4 flex flex-col">
+        <div class="font-nunito text-center my-3">IOT simplified</div>
+        <div
+          class="p-2 bg-primaryBlue rounded-2xl px-6 text-white font-nunito text-center w-max mx-auto hover:cursor-pointer"
+        >
+          <a href=" ">Read ME</a>
+        </div>
+      </div>
+         <!-- item 6-->
+      <div class="border-2  rounded-xl shadow m-10 p-4 flex flex-col">
+        <div class="font-nunito text-center my-3">MVVM simplified</div>
+        <div
+          class="p-2 bg-primaryBlue rounded-2xl px-6 text-white font-nunito text-center w-max mx-auto hover:cursor-pointer"
+        >
+          <a href=" ">Read ME</a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </template>
 
