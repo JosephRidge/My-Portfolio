@@ -131,15 +131,17 @@
       </div>
     
     </div> -->
+    <About/>
   </div>
 </template>
 
 <script>
 import defaultMixins from "../mixins/defaultMixins";
 import WorkPage from "./WorkPage.vue";
+import About from "./About.vue";
 export default {
   mixins: [defaultMixins],
-  components: { WorkPage },
+  components: { WorkPage, About },
 };
 </script>
 
