@@ -14,12 +14,14 @@
       />
     </div>
     <!-- work section -->
-    <div class="flex flex-row h-screen">
+    <div class="flex flex-row ">
       <!-- left arrow -->
-      <div class="m-auto">
+      <div class="my-auto">
         <img
           src="src/assets/leftArrow.svg"
-          class="-translate-y-2/4 ml-10 hover:cursor-pointer hover:shadow-xl transition ease-in-out hover:-translate-x-1 rounded-full"
+          class="-translate-y-2/4 ml-10 
+          hover:cursor-pointer hover:shadow-xl
+           transition ease-in-out hover:-translate-x-1 rounded-full"
           alt=" left pointing arrow logo"
           srcset=""
           loading="lazy"
@@ -29,7 +31,8 @@
       <!-- CENTER content flex flex-row auto-cols-max-->
 <!-- carousel body -->
       <div
-        class="carousel flex flex-row overflow-x-hidden scroll-smooth flex-nowrap w-content mx-7 w-screen"
+        class="carousel flex flex-row overflow-x-hidden
+         scroll-smooth flex-nowrap w-content mx-7 w-screen"
       >
         <!-- Project 1 -->
         <div id="project1"><ProjectOne class="mx-5 project first" /></div>
@@ -40,10 +43,12 @@
       </div>
 
       <!-- right arrow -->
-      <div class="m-auto" id="nextBtn">
+      <div class="my-auto" id="nextBtn">
         <img
           src="src/assets/rightArrow.svg"
-          class="-translate-y-2/4 mr-10 hover:shadow-xl hover:cursor-pointer transition ease-in-out hover:translate-x-1 rounded-full"
+          class="-translate-y-2/4 mr-10 hover:shadow-xl
+           hover:cursor-pointer transition 
+           ease-in-out hover:translate-x-1 rounded-full"
           alt="right pointing arrow logo"
           srcset=""
           loading="lazy"
