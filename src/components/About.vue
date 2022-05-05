@@ -18,15 +18,15 @@
     -->    
     <div class="border-4 rounded mx-32  py-11 px-10 text-xl font-light text-secondaryLightGray font-nunito">
         <div class="my-5 text-lg ">
-            <h2 class="text-xl my-1 font-normal">#Strength</h2>
+            <h2 class="text-xl my-1 font-normal text-darkGray">My Strength</h2>
             {{strength}}
         </div>
      <div class="my-5 text-lg ">
-            <h2 class="text-xl my-1 font-normal">#Tools</h2>
+            <h2 class="text-xl my-1 font-normal text-darkGray"> Tools I Use</h2>
             {{ tools }}
         </div>
        <div class="my-5 text-lg ">
-            <h2 class="capitalize text-xl my-1 font-normal">#Projects I Love & my personal request</h2>
+            <h2 class="capitalize text-xl my-1 font-normal text-darkGray"> Projects I Love & my personal request</h2>
             {{ mypassion }}
         </div>
 
