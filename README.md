@@ -102,7 +102,19 @@ const router = createRouter({
 * `git remote set-url origin https://github.com/{{yourUserName}}/{{YourRepoName}}.git/`
 
 
+# Adding Firebase tool
+* `npm install firebase`
+
+*Error* enocuntered amid download : 
+![Screenshot at 2022-05-08 13-47-15](https://user-images.githubusercontent.com/42699812/167292586-271ae506-f11b-4905-a809-a6fbd5672193.png)
+
+## Solution 
+![Screenshot at 2022-05-08 14-05-05](https://user-images.githubusercontent.com/42699812/167293246-e5fdf7da-390c-49b2-9031-d945d8ffa8f3.png)
+
+
 # Usefull Links : 
 * [Setting up your Code formatter - Prettier by kiran.jasvanee-Medium](https://medium.com/@kiran.jasvanee/prettier-auto-formatting-in-visual-studio-code-beab1c026b13) 
 
 * [Setting Up a formatter and a linter](https://vueschool.io/articles/vuejs-tutorials/eslint-and-prettier-with-vite-and-vue-js-3/)
+
+* [Firebase with Vuejs](https://learnvue.co/2021/06/a-vue-firebase-authentication-tutorial-vue-3-and-firebase/#firebase-authentication-in-vue)

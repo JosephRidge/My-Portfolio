@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-screen bg-primaryBlue flex flex-col" loading="lazy">
+  <div class="h-screen w-screen bg-primaryBlue flex flex-col" >
     <!-- Top Nav -->
     <NavigationBar class="text-white" />
     <div class="mx-5 mt-16"></div>
@@ -62,6 +62,8 @@
       <a href="#project2" class="w-4 h-4 bg-white rounded-full"/>
       <a href="#project3" class="w-4 h-4 bg-white mx-5 rounded-full"/>
     </div>
+    <Button @click="writeBlogDetails('Project Y ', 'https://learnvue.co/2021/06/a-vue-firebase-authentication-tutorial-vue-3-and-firebase/#user-registration','fjewbfjlewj jebkjew fkje  ehf khew fkh ewlhf h fhevhfjewkevfhbewjfb j;oefioeh fuoey fuoy euo fyeuof iuewyfey uoflheiu fh hdg, fdsfjds fy dgsjf')
+"> Buttton add </Button>
   </div>
 </template>
 
@@ -74,6 +76,8 @@ import ProjectThreeVue from "./ProjectThree.vue";
 import ProjectOne from "./ProjectOne.vue";
 import ProjecctTwo from "./ProjecctTwo.vue";
 import ProjectThree from "./ProjectThree.vue";
+import { getDatabase, ref, push } from "firebase/database";
+
 export default {
   mixins: [projectsMixins],
   components: {
@@ -83,8 +87,24 @@ export default {
     ProjectThreeVue,
     ProjectOne,
     ProjecctTwo,
-    ProjectThree,
+    ProjectThree, 
   },
+  mounted() {
+    console.log(`the component is now mounted.`)
+    // this.writeBlogDetails("Project W ", "https://learnvue.co/2021/06/a-vue-firebase-authentication-tutorial-vue-3-and-firebase/#user-registration")
+
+  },
+  methods:{
+       writeBlogDetails(blogName,blogUrl, blogDescp) {
+        const db = getDatabase();
+        push(ref(db, 'blogs/'), {
+          name: blogName,
+          link: blogUrl, 
+          description:blogDescp
+        });
+      }
+  }
+  
 };
 // const carousel = document.querySelectorAll('.carousel  .project');
 // const carouselSlide = document.querySelectorAll(".carousel ");
