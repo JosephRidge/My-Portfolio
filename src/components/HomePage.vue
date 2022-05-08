@@ -1,24 +1,25 @@
 <template>
-  <div class="w-screen h-screen static" loading="lazy">
+  <div class="w-screen h-screen static " loading="lazy">
     <!-- background -->
     <div class="transition duration-300 ease-in-out grid grid-cols-2">
       <!-- # HomePAGE Part 1-->
       <!--LEFT SIDE    -->
-      <div class="h-screen flex py-auto">
-        <div class="self-center px-32">
-          <div class="my-7 text-6xl font-normal font-roboto text-darkGray">
-            Hi there I am ,
+      <div class="h-screen flex flex-col  py-auto    ">
+        <div class="my-auto">  </div>
+        <div class=" transition ease-in-out px-32"  loading="lazy">
+          <div class="my-7 text-6xl font-normal font-roboto text-darkGray" >
+            Hi there, I'm 
           </div>
           <div class="  ">
             <img
               src="src/assets/JayR.svg"
-              class="w-80 pb-10 mt-2"
+              class="w-80 pb-10 mt-2 transition delay-150 ease-in-out"
               alt="Joseph Ridge logo"
               srcset=""
               loading="lazy"
             />
           </div>
-          <div class="text-3xl text-secondaryLightGray font-nunito mb-7">
+          <div class="transition delay-150 ease-in-out text-3xl text-secondaryLightGray font-nunito mb-7">
             A Student, Educator, Creator and Lover of Life. I Welcome you to
             experience a snapshot of my dev journey ! A Junior Android
             developer.
@@ -29,6 +30,7 @@
             About Me.
           </button>
         </div>
+         <div class="my-auto">  </div>
       </div>
       <!-- RIGHT SIDE  -->
       <div class="bg-blue-art bg-cover h-screen flex">
