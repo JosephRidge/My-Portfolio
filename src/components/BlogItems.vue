@@ -1,34 +1,15 @@
 <template>
-  <div class="h-screen w-screen flex flex-col" loading="lazy">
-    <div class="h-64 bg-darkGray">
-      <!-- my title -->
-      <div class="flex flex-row">
-        <img
-          src="src/assets/Logo.svg"
-          class="my-14 ml-14 h-44"
-          alt="My Work logo"
-          srcset=""
-          loading="lazy"
-        />
-        <div
-          class="capitalize text-5xl text-white font-light mx-auto my-auto pt-7"
-        >
-          Some of My simplified Technical pieces
-        </div>
-      </div>
-    </div>
-    <NavigationBar class="text-white" />
-    <!-- <AsyncBlogItems/> -->
+  <div class="h-screen w-screen flex flex-col" b> 
     <!-- Blogs Start -->
     <div class="grid grid-cols-3 mb-16 mx-16 justify-center">
       <div
         v-for="item in blogs"
         :key="item.id"
         loading="lazy"
-        class="border-2 rounded-xl shadow m-10 p-4 flex flex-col shadow-xl transition eas-in-out duration-500"
+        class="border-2 rounded-xl shadow m-10 p-4 flex flex-col shadow-xl"
       >
-        <div class="flex flex-row" 
-              loading="lazy"> 
+        <div class="flex flex-row">
+          <!-- src="src/assets/articles.jpg" -->
           <img
             :src="images[Math.floor(Math.random() * (6 - 0 + 1) + 0)]"
             alt="type writer image"
@@ -65,32 +46,23 @@
         </a>
       </div>
     </div>
-   <!-- Blogs End -->
+    <!-- Blogs End -->
   </div>
 </template>
 
-<script>
-import NavigationBar from "./NavigationBar.vue";
-import aboutmeMixins from "../mixins/aboutmeMixins";
-import firebaseMixins from "../mixins/firebaseMixins";
+<script>   
 import { getDatabase, ref, onValue } from "firebase/database";
 import { initializeApp } from "firebase/app";
-import { defineAsyncComponent } from "vue"; 
 
-const AsyncBlogItems = defineAsyncComponent(()=> import("./BlogItems.vue")) 
-
-export default {
-  mixins: [aboutmeMixins, firebaseMixins],
-  components: {
-    NavigationBar,
-   AsyncBlogItems
+export default { 
+  components: { 
   },
   data: {
     blogs: [],
     images: [
-      "src/assets/art_3.jpg", 
+      "src/assets/art_3.jpg",
+      "src/assets/art_4.jpg",
       "src/assets/art_2.jpg",
-      "src/assets/art.jpg",
       "src/assets/oranges.jpg",
       "src/assets/book_on_face.jpg",
       "src/assets/spiral.jpg",

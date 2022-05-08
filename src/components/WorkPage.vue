@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-screen bg-primaryBlue flex flex-col" loading="lazy">
+  <div class="h-screen w-screen bg-primaryBlue flex flex-col" >
     <!-- Top Nav -->
     <NavigationBar class="text-white" />
     <div class="mx-5 mt-16"></div>
@@ -77,6 +77,7 @@ import ProjectOne from "./ProjectOne.vue";
 import ProjecctTwo from "./ProjecctTwo.vue";
 import ProjectThree from "./ProjectThree.vue";
 import { getDatabase, ref, push } from "firebase/database";
+
 export default {
   mixins: [projectsMixins],
   components: {
@@ -86,7 +87,7 @@ export default {
     ProjectThreeVue,
     ProjectOne,
     ProjecctTwo,
-    ProjectThree,
+    ProjectThree, 
   },
   mounted() {
     console.log(`the component is now mounted.`)
