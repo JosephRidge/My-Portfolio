@@ -15,6 +15,7 @@ module.exports = {
       backgroundImage: {
         'blue-art': "url('../src/assets/Buebakcground.svg')",
         'bike-engine': "url('../src/assets/motocycle.jpg')",
+        'rectangle': "url('../src/assets/rectangle.svg')",
       },
     fontFamily: {
       roboto: ['Roboto', ],
