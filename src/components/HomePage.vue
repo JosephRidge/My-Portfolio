@@ -64,7 +64,8 @@
     </div>
     <WorkPage id="workSection" loading="lazy" class="workSection" /> 
     <About class="h-screen" />
-    <Blog />
+    <Blog/>
+    <ContactFormVue class="h-screen" />
   </div>
 </template>
 
@@ -73,9 +74,10 @@ import defaultMixins from "../mixins/defaultMixins";
 import WorkPage from "./WorkPage.vue";
 import About from "./About.vue";
 import Blog from "./Blog.vue";
+import ContactFormVue from "./ContactForm.vue";
 export default {
   mixins: [defaultMixins],
-  components: { WorkPage, About, Blog },
+  components: { WorkPage, About, Blog , ContactFormVue},
   methods: {
     _animate() {
       /*    Animation    */

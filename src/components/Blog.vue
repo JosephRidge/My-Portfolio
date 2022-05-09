@@ -20,15 +20,14 @@
     <NavigationBar class="text-white" />
     <!-- <AsyncBlogItems/> -->
     <!-- Blogs Start -->
-    <div class="grid grid-cols-3 mb-16 mx-16 justify-center">
+    <div class="grid grid-cols-3 mb-16 mx-16 justify-center overflow-y-auto">
       <div
         v-for="item in blogs"
         :key="item.id"
         loading="lazy"
         class="blog border-2 rounded-xl shadow m-10 p-4 flex flex-col shadow-xl transition eas-in-out duration-500"
       >
-        <div class="flex flex-row" 
-              loading="lazy"> 
+        <div class="flex flex-row" loading="lazy">
           <img
             :src="images[Math.floor(Math.random() * (6 - 0 + 1) + 0)]"
             alt="type writer image"
@@ -65,7 +64,7 @@
         </a>
       </div>
     </div>
-   <!-- Blogs End -->
+    <!-- Blogs End -->
   </div>
 </template>
 
@@ -75,20 +74,20 @@ import aboutmeMixins from "../mixins/aboutmeMixins";
 import firebaseMixins from "../mixins/firebaseMixins";
 import { getDatabase, ref, onValue } from "firebase/database";
 import { initializeApp } from "firebase/app";
-import { defineAsyncComponent } from "vue"; 
+import { defineAsyncComponent } from "vue";
 
-const AsyncBlogItems = defineAsyncComponent(()=> import("./BlogItems.vue")) 
+const AsyncBlogItems = defineAsyncComponent(() => import("./BlogItems.vue"));
 
 export default {
   mixins: [aboutmeMixins, firebaseMixins],
   components: {
     NavigationBar,
-   AsyncBlogItems
+    AsyncBlogItems,
   },
   data: {
     blogs: [],
     images: [
-      "src/assets/art_3.jpg", 
+      "src/assets/art_3.jpg",
       "src/assets/art_2.jpg",
       "src/assets/art.jpg",
       "src/assets/oranges.jpg",
@@ -114,19 +113,28 @@ export default {
           });
         },
         {
-          onlyOnce: true,
+          onlyOnce: false,
         }
       );
     },
 
     _animate() {
-      /*    Animation    */  
-      const blogs  = document.querySelector(".blog");     
-   const images  = document.querySelector(".image"); 
-      const t1 = new TimelineMax(); 
-      t1.fromTo(blogs,2, {opacity:"0"}, {opacity:"1", ease:Power2.easeInOut} )
-        t1.fromTo(images,1, {opacity:"0"}, {opacity:"1", ease:Power2.easeInOut} )
-
+      /*    Animation    */
+      const blogs = document.querySelector(".blog");
+      const images = document.querySelector(".image");
+      const t1 = new TimelineMax();
+      t1.fromTo(
+        blogs,
+        2,
+        { opacity: "0" },
+        { opacity: "1", ease: Power2.easeInOut }
+      );
+      t1.fromTo(
+        images,
+        1,
+        { opacity: "0" },
+        { opacity: "1", ease: Power2.easeInOut }
+      );
     },
   },
   mounted() {
@@ -145,7 +153,7 @@ export default {
     const db = getDatabase();
     const dbRef = ref(db, "blogs");
     this.fetchBlogs(dbRef);
-    this._animate()
+    this._animate();
   },
 };
 </script>
