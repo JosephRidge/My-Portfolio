@@ -54,6 +54,13 @@ const router = createRouter({
   routes, // short for `routes: routes`
 });
 
+
+/*
+const myName = document.querySelector(".")
+const myName = document.querySelector(".")
+const myName = document.querySelector(".")
+ */
+
 //add the router-view tag to the main app.vue component to enable any active page to be rendered within it.
 //app.vue is our single page
 createApp(App).use(router).mount("#app");
