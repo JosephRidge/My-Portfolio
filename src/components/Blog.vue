@@ -111,6 +111,7 @@ export default {
             };
             console.log(" == > ", blog);
             this.blogs.push(blog);
+            this._animate()
           });
         },
         {
@@ -122,7 +123,7 @@ export default {
     _animate() {
       /*    Animation    */  
       const blogs  = document.querySelector(".blog");     
-   const images  = document.querySelector(".image"); 
+     const images  = document.querySelector(".image"); 
       const t1 = new TimelineMax(); 
       t1.fromTo(blogs,2, {opacity:"0"}, {opacity:"1", ease:Power2.easeInOut} )
         t1.fromTo(images,1, {opacity:"0"}, {opacity:"1", ease:Power2.easeInOut} )
@@ -145,7 +146,7 @@ export default {
     const db = getDatabase();
     const dbRef = ref(db, "blogs");
     this.fetchBlogs(dbRef);
-    this._animate()
+    // this._animate()
   },
 };
 </script>

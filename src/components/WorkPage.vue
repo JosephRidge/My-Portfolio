@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-screen bg-primaryBlue flex flex-col">
     <!-- Top Nav -->
-    <NavigationBar class="text-white" />
+    <!-- <NavigationBar class="text-white" /> -->
     <div class="mx-5 mt-16"></div>
     <!-- my title -->
     <div class="py-4" id="prevBtn">
