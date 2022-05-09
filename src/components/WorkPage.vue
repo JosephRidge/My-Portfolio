@@ -138,10 +138,6 @@ export default {
 </script>
 
 <style>
-.swiper {
-  /* width: 600px;
-  height: 300px; */
-}
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     content: 'next';
     visibility: hidden !important;
