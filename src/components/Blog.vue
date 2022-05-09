@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen w-screen flex flex-col" loading="lazy">
-    <div class="h-64 bg-darkGray">
+    <div class="h-64 bg-darkGray image">
       <!-- my title -->
       <div class="flex flex-row">
         <img
@@ -25,7 +25,7 @@
         v-for="item in blogs"
         :key="item.id"
         loading="lazy"
-        class="border-2 rounded-xl shadow m-10 p-4 flex flex-col shadow-xl transition eas-in-out duration-500"
+        class="blog border-2 rounded-xl shadow m-10 p-4 flex flex-col shadow-xl transition eas-in-out duration-500"
       >
         <div class="flex flex-row" 
               loading="lazy"> 
@@ -56,7 +56,7 @@
             <span class="my-auto mx-2 text-sm 0">Read</span>
             <img
               src="src/assets/read_more.svg"
-              class="my-auto mr-2 left-0 w-6"
+              class="image my-auto mr-2 left-0 w-6"
               alt=""
               srcset=""
               loading="lazy"
@@ -118,6 +118,16 @@ export default {
         }
       );
     },
+
+    _animate() {
+      /*    Animation    */  
+      const blogs  = document.querySelector(".blog");     
+   const images  = document.querySelector(".image"); 
+      const t1 = new TimelineMax(); 
+      t1.fromTo(blogs,2, {opacity:"0"}, {opacity:"1", ease:Power2.easeInOut} )
+        t1.fromTo(images,1, {opacity:"0"}, {opacity:"1", ease:Power2.easeInOut} )
+
+    },
   },
   mounted() {
     // Initialize Firebase
@@ -135,6 +145,7 @@ export default {
     const db = getDatabase();
     const dbRef = ref(db, "blogs");
     this.fetchBlogs(dbRef);
+    this._animate()
   },
 };
 </script>
