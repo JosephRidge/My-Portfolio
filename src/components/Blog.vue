@@ -1,26 +1,26 @@
 <template>
   <div class="h-full w-screen flex flex-col" loading="lazy">
-    <div class="h-64 bg-darkGray image">
+    <div class="  bg-darkGray image">
       <!-- my title -->
       <div class="flex flex-row">
         <img
           src="src/assets/Logo.svg"
-          class="my-14 ml-14 h-44"
+          class=" ml-14 h-44 my-auto "
           alt="My Work logo"
           srcset=""
           loading="lazy"
         />
         <div
-          class="capitalize text-5xl text-white font-light mx-auto my-auto pt-7"
+          class=" capitalize text-5xl text-white font-light mx-auto my-auto pt-auto"
         >
           Some of My simplified Technical pieces
         </div>
       </div>
     </div>
-    <NavigationBar class="text-white" />
+    <!-- <NavigationBar class="text-white" /> -->
     <!-- <AsyncBlogItems/> -->
     <!-- Blogs Start -->
-    <div class="grid grid-cols-3 mb-16 mx-16 justify-center overflow-y-auto">
+    <div class=" blog grid grid-cols-3 mb-16 mx-16 justify-center overflow-y-auto">
       <div
         v-for="item in blogs"
         :key="item.id"
@@ -35,22 +35,27 @@
             srcset="Photo by Markus Winkler: https://www.pexels.com/photo/close-up-shot-of-a-typewriter-4160066/"
             loading="lazy"
           />
-          <div class="flex flex-col">
+          <div class="flex flex-col h-36  text-ellipsis ">
             <div
               class="font-nunito text-left text-lg text-darkGray font-roboto font-regular mx-6"
             >
               {{ item.name }}
             </div>
             <div
-              class="font-nunito text-left text-sm text-secondaryLightGray font-light font-nunito mx-6 mb-2"
+              class="overflow-auto font-nunito text-left text-sm text-secondaryLightGray font-light font-nunito mx-6 mb-2"
             >
-              {{ item.description }}
+            {{ item.description }}
             </div>
           </div>
         </div>
-        <a :href="item.link" target="_blank" draggable=" ">
+        <a :href="item.link" class="my-2" target="_blank" draggable=" ">
           <div
-            class="flex py-1 bg-darkGray rounded-full px-3 text-white font-nunito text-center w-max mx-auto hover:cursor-pointer font-bold hover:translate-x-1 hover:shadow-xl transition ease-in-out"
+            class="flex py-1 bg-darkGray
+              rounded-full px-3 text-white 
+              font-nunito text-center w-max
+              mx-auto hover:cursor-pointer 
+              font-bold hover: hover:scale-110  
+              hover:shadow-xl transition ease-in-out"
           >
             <span class="my-auto mx-2 text-sm 0">Read</span>
             <img
