@@ -1,7 +1,7 @@
 <template>
   <div class="h-full scroll-smooth bg-primaryBlue px-2 flex flex-col">
     <!-- Top Nav -->
-    <div><NavigationBar class="text-white" /></div>
+    <!-- <div><NavigationBar class="text-white" /></div> -->
 
     <!-- <div class="mx-5 mt-16"></div> -->
     <!-- my title -->

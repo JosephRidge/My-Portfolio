@@ -33,7 +33,7 @@
     </div>
     <!-- Bottom Dark Bar -->
      <div class="relative mt-auto">
-    <div class="bg-secondaryLightGray h-32  absolute inset-x-0 bottom-0 "></div>
+    <div class="bg-secondaryLightGray h-16 absolute inset-x-0 bottom-0 "></div>
 
     </div> 
 

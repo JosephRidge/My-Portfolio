@@ -5,7 +5,7 @@
       <div class="flex flex-row">
         <img
           src="src/assets/Logo.svg"
-          class=" ml-14 h-44 my-auto "
+          class=" ml-14 h-44 mb-10 "
           alt="My Work logo"
           srcset=""
           loading="lazy"
@@ -42,7 +42,7 @@
               {{ item.name }}
             </div>
             <div
-              class="overflow-auto font-nunito text-left text-sm text-secondaryLightGray font-light font-nunito mx-6 mb-2"
+              class=" overflow-auto font-nunito text-left text-sm text-secondaryLightGray font-light font-nunito mx-6 mb-2"
             >
             {{ item.description }}
             </div>
