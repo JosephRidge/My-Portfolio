@@ -5,26 +5,82 @@
       class="mx-auto my-3"
       alt="Contact me Page"
     />
-    <div class="capitalize font-roboto my-4 text-3xl font-light text-center">
+    <div class="capitalize font-roboto my-10 text-3xl font-light text-center">
       reach out and let’s make great things happen.
     </div>
-    <div class="flex flex-col w-1/2 h-1/4 bg-gray-100 my-auto mx-auto p-4">
-  
-        <div>
-          <span>Email : </span> <input type="text" class="bg-gray-200  m-1 p-2 rounded appearance-none border-2 
-          focus:bg-white focus:border-white" placeholder="email" />
+    <div class="w-1/2 mx-auto p-2">
+      <div
+        class="flex flex-col h-auto my-auto mx-auto p-4 rounded-lg border-2 border-primaryBlue"
+      >
+        <div class="my-3">
+          <span class="font-light font-roboto text-lg mx-1"
+            >Email / Phone Number :
+          </span>
+          <input
+            v-model="contact"
+            type="text"
+            id="contact"
+            class="contact w-full bg-gray-200 m-1 p-2 rounded appearance-none border-2 focus:outline-none focus:bg-white"
+            placeholder="email / phone number"
+          />
         </div>
-        <div>
-          <span> Message : </span> <input type="text" class="  m-1 p-2 rounded bg-gray-200 appearance-none border-2 "  placeholder="message" />
-        </div> 
-      <button class="bg-black text-white rounded w-min py-1   px-5 right-0 bottom-0 
-      hover:shadow-xl transition hover:-translate-y-1">send</button>
+        <div class="my-3">
+          <span class="my-auto font-light font-roboto text-lg mx-1">
+            Message :
+          </span>
+
+          <textarea
+            v-model="message"
+            id="message"
+            type="text"
+            class="message font-nunito focus:outline-none focus:bg-white w-full m-1 p-2 rounded bg-gray-200 appearance-none border-2"
+            placeholder="message"
+          />
+        </div>
+        <button
+          @click="pushMessage()"
+          class="my-auto mx-auto bg-black text-white rounded w-min py-1 px-5 right-0 bottom-0 hover:shadow-xl transition hover:scale-110 capitalize"
+        >
+          send
+        </button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { getDatabase, ref, push } from "firebase/database";
+import { initializeApp } from "firebase/app";
+
+export default {
+  methods: {
+    pushMessage() {
+      let contact = this.contact;
+      let contactDOM = document.getElementById("contact");
+      let message = this.message;
+      let messageDOM = document.getElementById("message");
+      const firebaseConfig = {
+        apiKey: this.apiKey,
+        authDomain: this.authDomain,
+        databaseURL: this.databaseURL,
+        projectId: this.projectId,
+        storageBucket: this.storageBucket,
+        messagingSenderId: this.messagingSenderId,
+        appId: this.appId,
+        measurementId: this.measurementId,
+      };
+      // initializeApp(firebaseConfig);
+      const db = getDatabase();
+      const dbRef = ref(db, "messages");
+      push(dbRef, {
+        contact: contact,
+        message: message,
+      });
+      contactDOM.value = "";
+      messageDOM.value = "";
+    },
+  },
+}; 
 </script>
 
 <style></style>
