@@ -1,8 +1,9 @@
 <template>
-  <div class="h-screen w-screen bg-primaryBlue flex flex-col">
-    <!-- Top Nav -->
-    <!-- <NavigationBar class="text-white" /> -->
-    <div class="mx-5 mt-16"></div>
+  <div class="h-full scroll-smooth bg-primaryBlue px-2 flex flex-col">
+    <!-- Top Nav --> 
+    <!-- <div><NavigationBar class="text-white" /></div> -->
+
+    <!-- <div class="mx-5 mt-16"></div> --> 
     <!-- my title -->
     <div class="py-4" id="prevBtn">
       <img
@@ -13,41 +14,39 @@
         loading="lazy"
       />
     </div>
+
     <!-- work section -->
-    <div class=" ">
-      <div class="swiper">
+    <div class="drop-shadow-2xl py-3 px-10 rounded">
+      <div class="swiper px-32">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper mx-20 center">
+        <div class="swiper-wrapper">
           <!-- Project 1 -->
-          <div class="swiper-slide"><ProjectOne class="mx-5" /></div>
+          <div class="swiper-slide"><ProjectOne class="ml-5" /></div>
           <!-- Project 2 -->
-          <div class="swiper-slide"><ProjecctTwo class="" /></div>
+          <div class="swiper-slide"><ProjecctTwo class="mx-5" /></div>
           <!-- Project 3-->
-          <div class="swiper-slide"><ProjectThree class="mx-5" /></div>
+          <div class="swiper-slide"><ProjectThree class="mr-5" /></div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
-        <div class="my-auto ">
-          <img
-            src="src/assets/leftArrow.svg"
-            class="  -translate-y-2/4
-             mr-auto h-14 w-16 swiper-button-prev 
-             hover:shadow-xl hover:cursor-pointer 
-             transition ease-in-out hover:translate-x-1 rounded-full"
-            alt="right pointing arrow logo"
-            srcset=""
-            loading="lazy"
-          />
-        </div>
+        <!-- <div class=" z-10 bg-red-300 p-2 m-2"> -->
+        <img
+          src="src/assets/leftArrow.svg"
+          class="-translate-y-2/4 -translate-x-2/4 
+          mx-6 my-auto h-10 w-12 swiper-button-prev 
+          hover:shadow-xl hover:cursor-pointer transition
+           ease-in-out hover:scale-125 rounded-full"
+          alt="right pointing arrow logo"
+          srcset=""
+          loading="lazy"
+        />
+        <!-- </div> -->
         <!-- right arrow -->
-        <div class="my-auto   ">
+        <div class="my-auto">
           <img
             src="src/assets/rightArrow.svg"
-            class="my-auto -translate-y-2/4 
-            mr-auto h-14 w-16 swiper-button-next 
-            hover:shadow-xl hover:cursor-pointer
-             transition ease-in-out hover:translate-x-1 rounded-full"
+            class="my-auto -translate-y-2/4 translate-x-2/4 h-10 w-12 mx-6 swiper-button-next hover:shadow-xl hover:cursor-pointer transition ease-in-out hover:scale-125 rounded-full"
             alt="right pointing arrow logo"
             srcset=""
             loading="lazy"
@@ -111,10 +110,14 @@ export default {
     },
     swiperJS() {
       const swiper = new Swiper(".swiper", {
+        dots: true,
+        infinite: true,
+        speed: 500, 
+        slide: "> div",
+        cssEase: "linear",
         // Optional parameters
         modules: [Navigation, Pagination],
         loop: true,
-
         // If we need pagination
         pagination: {
           el: ".swiper-pagination",
@@ -138,8 +141,9 @@ export default {
 </script>
 
 <style>
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-    content: 'next';
-    visibility: hidden !important;
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+  visibility: hidden !important;
 }
 </style>

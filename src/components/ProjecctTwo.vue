@@ -1,6 +1,6 @@
 <template> 
         <div
-          class="flex flex-cols   bg-secondaryLighterBlue rounded-xl px-7" style="width:1014px;">
+          class="flex flex-cols   bg-secondaryLighterBlue rounded-xl px-7">
           <div class="p-10 text-white font-nunito  w-1/2 ">
             <!-- Project Title -->
             <div class="text-5xl my-4 capitalize">greensoko Client</div>

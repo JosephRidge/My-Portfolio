@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-screen flex flex-col" b> 
+  <div class="h-screen w-screen flex flex-col my-auto" loading="lazy"> 
     <!-- Blogs Start -->
     <div class="grid grid-cols-3 mb-16 mx-16 justify-center">
       <div
