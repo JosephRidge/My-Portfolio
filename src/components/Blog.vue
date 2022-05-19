@@ -1,6 +1,6 @@
 <template>
   <div class="h-full w-screen flex flex-col" loading="lazy">
-    <div class="  bg-darkGray image">
+    <div class="image  bg-darkGray ">
       <!-- my title -->
       <div class="flex flex-row">
         <img
@@ -20,12 +20,12 @@
     <!-- <NavigationBar class="text-white" /> -->
     <!-- <AsyncBlogItems/> -->
     <!-- Blogs Start -->
-    <div class=" blog grid grid-cols-3 mb-16 mx-16 justify-center overflow-y-auto">
+    <div class="image bg-gray-50 blog grid grid-cols-3 mb-16 mx-16 justify-center overflow-y-auto">
       <div
         v-for="item in blogs"
         :key="item.id"
         loading="lazy"
-        class="blog border-2 rounded-xl shadow m-10 p-4 flex flex-col shadow-xl transition eas-in-out duration-500"
+        class="blog border-2 rounded-xl shadow m-10 p-4 flex flex-col bg-white shadow-xl transition eas-in-out duration-500"
       >
         <div class="flex flex-row" loading="lazy">
           <img
