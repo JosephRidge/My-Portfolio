@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-screen flex flex-col" loading="lazy">
+  <div class="h-full w-screen flex flex-col" loading="lazy">
     <div class="h-64 bg-darkGray image">
       <!-- my title -->
       <div class="flex flex-row">
