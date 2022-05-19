@@ -39,10 +39,42 @@
         </div>
         <button
           @click="pushMessage()"
-          class="my-auto mx-auto bg-black text-white rounded w-min py-1 px-5 right-0 bottom-0 hover:shadow-xl transition hover:scale-110 capitalize"
+          class="my-auto mx-auto w-1/2 bg-black text-white rounded w-min py-1 px-10 right-0 bottom-0 hover:shadow-xl transition hover:scale-110 capitalize"
         >
           send
         </button>
+      </div>
+      <div class="flex my-10 mx-auto w-1/2">
+        <div>
+          <a :href=github target="_blank"
+            ><img
+              src="src/assets/Github.svg"
+              class="ml-16 w-10"
+              alt="My Work logo"
+              srcset=""
+              loading="lazy"
+          /></a>
+        </div>
+        <div>
+          <a :href=linkedin target="_blank"
+            ><img
+              src="src/assets/linkedin.svg"
+              class="w-10 mx-10"
+              alt="My Work logo"
+              srcset=""
+              loading="lazy"
+          /></a>
+        </div>
+        <div>
+          <a :href=twitter target="_blank">
+            <img
+              src="src/assets/twitter.svg"
+              class="w-12 my-auto"
+              alt="My Work logo"
+              srcset=""
+              loading="lazy"
+          /></a>
+        </div>
       </div>
     </div>
   </div>
@@ -51,8 +83,10 @@
 <script>
 import { getDatabase, ref, push } from "firebase/database";
 import { initializeApp } from "firebase/app";
+import defaultMixins from "../mixins/defaultMixins"; 
 
 export default {
+  mixins: [defaultMixins],
   methods: {
     pushMessage() {
       let contact = this.contact;
@@ -80,7 +114,7 @@ export default {
       messageDOM.value = "";
     },
   },
-}; 
+};
 </script>
 
 <style></style>
