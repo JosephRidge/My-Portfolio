@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-screen">
+  <div class="h-screen w-screen my-10">
     <img
       src="src/assets/ContactMe.svg"
       class="mx-auto my-3"
@@ -77,6 +77,18 @@
         </div>
       </div>
     </div>
+    <marquee class="bottom-0 py-4 font-nunito w-full bg-primaryBlue
+     hover:text-white transition ease-in-out text-lg  " behavior=" " direction="right"> 
+     <div class="flex" >  <img
+          src="src/assets/Logo.svg"
+          class="w-10 "
+          alt="My Work logo"
+          srcset=""
+          loading="lazy"
+        />
+         <div class="mx-3 my-auto">Through silence that I am able to listen and learn more from others... Thank you for taking your time to view my profile.</div>
+        </div> 
+       </marquee>
   </div>
 </template>
 

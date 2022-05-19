@@ -1,5 +1,9 @@
 <template>
-  <div class="w-screen h-screen static" loading="lazy">
+  <div class="w-screen h-screen static relative" loading="lazy">
+    <!-- top page scroll progress bar -->
+    <div class="fixed top-0 left-0 right-0 z-10">
+      <div class="bg-primaryBlue h-2 trasnsition ease-in-out" id="myBar"></div>
+    </div>
     <!-- background -->
     <div class="transition duration-300 ease-in-out grid grid-cols-2">
       <!-- # HomePAGE Part 1-->
@@ -62,11 +66,7 @@
         </a>
       </div>
     </div>
-    <WorkPage
-      id="workSection"
-      loading="lazy"
-      class=" "
-    />
+    <WorkPage id="workSection" loading="lazy" class=" " />
     <About class="h-full" />
     <Blog />
     <ContactFormVue class="h-screen" />
@@ -120,6 +120,19 @@ export default {
   },
   mounted() {
     this._animate();
+    function progressOnScroll() {
+      var winScroll =
+        document.documentElement.scrollTop ||
+        document.documentElement.scrollTop;
+      var height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    window.onscroll = function () {
+      progressOnScroll();
+    };
   },
 };
 </script>
