@@ -115,6 +115,7 @@ export default {
             };
             console.log(" == > ", blog);
             this.blogs.push(blog);
+            this._animate()
           });
         },
         {
@@ -123,7 +124,7 @@ export default {
       );
     },
 
-    _animate() {
+    _animate() { 
       /*    Animation    */
       const blogs = document.querySelector(".blog");
       const images = document.querySelector(".image");
@@ -139,7 +140,7 @@ export default {
         1,
         { opacity: "0" },
         { opacity: "1", ease: Power2.easeInOut }
-      );
+      ); 
     },
   },
   mounted() {
@@ -157,8 +158,8 @@ export default {
     initializeApp(firebaseConfig);
     const db = getDatabase();
     const dbRef = ref(db, "blogs");
-    this.fetchBlogs(dbRef);
-    this._animate();
+    this.fetchBlogs(dbRef); 
+    this._animate(); 
   },
 };
 </script>
