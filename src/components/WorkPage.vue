@@ -1,10 +1,11 @@
 <template>
-  <div class="h-screen w-screen bg-primaryBlue flex flex-col" loading="lazy">
+  <div class="h-full scroll-smooth bg-primaryBlue px-2 flex flex-col">
     <!-- Top Nav -->
-    <NavigationBar class="text-white" />
-    <div class="mx-5 mt-16"></div>
+    <div><NavigationBar class="text-white" /></div>
+
+    <!-- <div class="mx-5 mt-16"></div> -->
     <!-- my title -->
-    <div class="py-4"  id="prevBtn">
+    <div class="py-4 " id="prevBtn">
       <img
         src="src/assets/MyWork.svg"
         class="mx-32 w-56 h-14"
@@ -13,54 +14,47 @@
         loading="lazy"
       />
     </div>
+
     <!-- work section -->
-    <div class="flex flex-row ">
-      <!-- left arrow -->
-      <div class="my-auto">
+    <div class=" drop-shadow-2xl py-3 px-10 rounded">
+      <div class="swiper px-32 ">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper ">
+          <!-- Project 1 -->
+          <div class="swiper-slide "><ProjectOne class="ml-5 " /></div>
+          <!-- Project 2 -->
+          <div class="swiper-slide"><ProjecctTwo class="mx-5" /></div>
+          <!-- Project 3-->
+          <div class="swiper-slide"><ProjectThree class="mr-5" /></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- <div class=" z-10 bg-red-300 p-2 m-2"> -->
         <img
           src="src/assets/leftArrow.svg"
-          class="-translate-y-2/4 ml-10 
-          hover:cursor-pointer hover:shadow-xl
-           transition ease-in-out hover:-translate-x-1 rounded-full"
-          alt=" left pointing arrow logo"
-          srcset=""
-          loading="lazy"
-        />
-      </div>
-
-      <!-- CENTER content flex flex-row auto-cols-max-->
-<!-- carousel body -->
-      <div
-        class="carousel flex flex-row overflow-x-hidden
-         scroll-smooth flex-nowrap w-content mx-7 w-screen"
-      >
-        <!-- Project 1 -->
-        <div id="project1"><ProjectOne class="mx-5 project first" /></div>
-        <!-- Project 2 -->
-        <div id="project2" ><ProjecctTwo class="project"/></div>
-        <!-- Project 3-->
-        <div id="project3" ><ProjectThree class="mx-5 project" /></div>
-      </div>
-
-      <!-- right arrow -->
-      <div class="my-auto" id="nextBtn">
-        <img
-          src="src/assets/rightArrow.svg"
-          class="-translate-y-2/4 mr-10 hover:shadow-xl
-           hover:cursor-pointer transition 
-           ease-in-out hover:translate-x-1 rounded-full"
+          class="-translate-y-2/4 -translate-x-2/4 
+          mx-6 my-auto h-10 w-12  swiper-button-prev hover:shadow-xl 
+          hover:cursor-pointer transition ease-in-out hover:scale-125  rounded-full"
           alt="right pointing arrow logo"
           srcset=""
           loading="lazy"
         />
+        <!-- </div> -->
+        <!-- right arrow -->
+        <div class="my-auto">
+          <img
+            src="src/assets/rightArrow.svg"
+            class="my-auto -translate-y-2/4 translate-x-2/4 h-10 w-12 mx-6 swiper-button-next 
+            hover:shadow-xl hover:cursor-pointer transition ease-in-out hover:scale-125 rounded-full"
+            alt="right pointing arrow logo"
+            srcset=""
+            loading="lazy"
+          />
+        </div>
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
-    </div>
-    <div class="flex justify-center my-4">
-      <a href="#project1" 
-        class="w-4 h-4 bg-white mx-5 rounded-full "
-      />
-      <a href="#project2" class="w-4 h-4 bg-white rounded-full"/>
-      <a href="#project3" class="w-4 h-4 bg-white mx-5 rounded-full"/>
     </div>
   </div>
 </template>
@@ -74,6 +68,21 @@ import ProjectThreeVue from "./ProjectThree.vue";
 import ProjectOne from "./ProjectOne.vue";
 import ProjecctTwo from "./ProjecctTwo.vue";
 import ProjectThree from "./ProjectThree.vue";
+import { getDatabase, ref, push } from "firebase/database";
+
+// core version + navigation, pagination modules:
+import Swiper, { Navigation, Pagination } from "swiper";
+// import Swiper and modules styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+// init Swiper:
+const swiper = new Swiper(".swiper", {
+  // configure Swiper to use modules
+  modules: [Navigation, Pagination],
+});
+
 export default {
   mixins: [projectsMixins],
   components: {
@@ -85,20 +94,55 @@ export default {
     ProjecctTwo,
     ProjectThree,
   },
+  mounted() {
+    console.log(`the component is now mounted.`);
+    this.swiperJS();
+    // this.writeBlogDetails("Project W ", "https://learnvue.co/2021/06/a-vue-firebase-authentication-tutorial-vue-3-and-firebase/#user-registration")
+  },
+  methods: {
+    writeBlogDetails(blogName, blogUrl, blogDescp) {
+      const db = getDatabase();
+      push(ref(db, "blogs/"), {
+        name: blogName,
+        link: blogUrl,
+        description: blogDescp,
+      });
+    },
+    swiperJS() {
+      const swiper = new Swiper(".swiper", {
+        effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+        // Optional parameters
+        modules: [Navigation, Pagination],
+        loop: true, 
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          // el: ".swiper-scrollbar",
+        },
+      });
+      return swiper;
+    },
+  },
 };
-// const carousel = document.querySelectorAll('.carousel  .project');
-// const carouselSlide = document.querySelectorAll(".carousel ");
-// // buttons
-// const prevButton = document.querySelector("#prevBtn")
-//  const nextButton = document.querySelector("#nextBtn")
-//  let counter = 1  
-//  const size = carousel.clientWidth;
-//  carouselSlide.transform = 'translateX('+(-size * counter)+'px)'
-//  nextButton.addEventListener('click',()=>{
-//    counter++
-//    console.log(counter)
-//    })
 </script>
 
-<style> 
+<style>
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+  visibility: hidden !important;
+}
 </style>
