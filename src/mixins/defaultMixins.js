@@ -15,8 +15,7 @@ export default {
          with human beings on a personal level\
          and with the exponential rise of Smart Phones and devices ownership\
          I beleive that more impact can be made through mobile devices and smart devices.  ",
-      myuiux:
-        " .",
+      myuiux: " .",
       myideal:
         " My Ideal in life is to continuously improve my skills as a Software Engineer while \
        I teach those that need to know how to create or build but do not know where and how to start.",
@@ -29,7 +28,7 @@ export default {
           Android-Studio (Java | Kotlin ), Flutter, HTML, CSS, JavaScript, Python, VueJS, Figma, Balsamiq, AdobeXD  \
          ",
       greensokoClient:
-      "This was an interesting and really exciting project as i was able to redesign and rebuild two main mobile Client and Admin Applications.\
+        "This was an interesting and really exciting project as i was able to redesign and rebuild two main mobile Client and Admin Applications.\
           The project initially started off by solving the existing bugs so as to have a working system,\
           this involed reading 12000 lines of decoupled code. Time being of essence it took longer, hence the team from Greensoko requested I rebuild the whole system.\
           Pure excitement, for me as it focused on native and crossplatform applications, my passion.\
@@ -47,7 +46,10 @@ export default {
           Once interesting challenge i faced was swicthing from Java to Dart and back to Dart while fixing bugs, their syntax are different, hence everytime i swicthed felt\
           as though i was swicthing my Calculus lesson from English to French and back, pretty fun.\
           I appreciate the team from Greensoko as they contributed to my growth as a developer. Thank you team Greensoko!\
-          "   
+          ",
+      linkedin: "https://www.linkedin.com/in/joseph-ridge-6a832b183/",
+      github: "https://github.com/JosephRidge",
+      twitter: "https://twitter.com/josephridge18",
     };
   },
   created() {

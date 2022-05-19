@@ -1,16 +1,22 @@
 <template>
-  <div class=" w-screen h-screen static" loading="lazy">
+  <div class="w-screen h-screen static relative" loading="lazy">
+    <!-- top page scroll progress bar -->
+    <div class="fixed top-0 left-0 right-0 z-10">
+      <div class="bg-primaryBlue h-2 trasnsition ease-in-out" id="myBar"></div>
+    </div>
     <!-- background -->
     <div class="transition duration-300 ease-in-out grid grid-cols-2">
       <!-- # HomePAGE Part 1-->
       <!--LEFT SIDE    -->
-      <div class="  h-screen flex flex-col py-auto">
+      <div class="h-screen flex flex-col py-auto">
         <div class="my-auto"></div>
-        <div class=" px-32" loading="lazy">
-          <div class=" greetings my-7 text-6xl font-normal font-roboto text-darkGray">
+        <div class="px-32" loading="lazy">
+          <div
+            class="greetings my-7 text-6xl font-normal font-roboto text-darkGray"
+          >
             Hi there, I'm
           </div>
-          <div class=" name ">
+          <div class="name">
             <img
               src="src/assets/JayR.svg"
               class="w-80 pb-10 mt-2 transition delay-150 ease-in-out"
@@ -19,9 +25,7 @@
               loading="lazy"
             />
           </div>
-          <div
-            class="about    text-3xl text-secondaryLightGray font-nunito mb-7"
-          >
+          <div class="about text-3xl text-secondaryLightGray font-nunito mb-7">
             A Student, Educator, Creator and Lover of Life. I Welcome you to
             experience a snapshot of my dev journey ! A Junior Android
             developer.
@@ -46,7 +50,7 @@
         </div>
         <a
           href="#workSection"
-          class="work  scroll-smooth absolute flex flex-row w-auto h-auto border border-2 border-white rounded bottom-0 right-0 m-10"
+          class="work scroll-smooth absolute flex flex-row w-auto h-auto border border-2 border-white rounded bottom-0 right-0 m-10"
         >
           <div class="my-2 ml-4 mr-2 text-white font-bold font-roboto">
             SCROLL
@@ -62,9 +66,10 @@
         </a>
       </div>
     </div>
-    <WorkPage id="workSection" loading="lazy" class="workSection" /> 
-    <About class="h-screen" />
+    <WorkPage id="workSection" loading="lazy" class=" " />
+    <About class="h-full" />
     <Blog />
+    <ContactFormVue class="h-screen" />
   </div>
 </template>
 
@@ -73,9 +78,10 @@ import defaultMixins from "../mixins/defaultMixins";
 import WorkPage from "./WorkPage.vue";
 import About from "./About.vue";
 import Blog from "./Blog.vue";
+import ContactFormVue from "./ContactForm.vue";
 export default {
   mixins: [defaultMixins],
-  components: { WorkPage, About, Blog },
+  components: { WorkPage, About, Blog, ContactFormVue },
   methods: {
     _animate() {
       /*    Animation    */
@@ -83,20 +89,51 @@ export default {
       const greetings = document.querySelector(".greetings");
       const name = document.querySelector(".name");
       const about = document.querySelector(".about");
-      const homePage  = document.querySelector(".home");
-       
+      const homePage = document.querySelector(".home");
 
-      const t1 = new TimelineMax(); 
-      t1.fromTo(homePage,3, {opacity:"0"}, {opacity:"1", ease:Power2.easeInOut} )
-      t1.fromTo(greetings,1, {opacity:"0"}, {opacity:"1", ease:Power2.easeInOut} )
-      t1.fromTo(name,1.5, {opacity:"0"}, {opacity:"1", ease:Power2.easeInOut} )
-      t1.fromTo(about,1.3, {opacity:"0"}, {opacity:"1", ease:Power2.easeInOut} )
- 
+      const t1 = new TimelineMax();
+      t1.fromTo(
+        homePage,
+        3,
+        { opacity: "0" },
+        { opacity: "1", ease: Power2.easeInOut }
+      );
+      t1.fromTo(
+        greetings,
+        1,
+        { opacity: "0" },
+        { opacity: "1", ease: Power2.easeInOut }
+      );
+      t1.fromTo(
+        name,
+        1.5,
+        { opacity: "0" },
+        { opacity: "1", ease: Power2.easeInOut }
+      );
+      t1.fromTo(
+        about,
+        1.3,
+        { opacity: "0" },
+        { opacity: "1", ease: Power2.easeInOut }
+      );
     },
   },
-  mounted(){
-    this._animate()
-  }
+  mounted() {
+    this._animate();
+    function progressOnScroll() {
+      var winScroll =
+        document.documentElement.scrollTop ||
+        document.documentElement.scrollTop;
+      var height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    window.onscroll = function () {
+      progressOnScroll();
+    };
+  },
 };
 </script>
 
