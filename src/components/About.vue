@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen w-screen  flex flex-col" loading="lazy">
-        <NavigationBar class="text-primaryBlue" />
+        <!-- <NavigationBar class="text-primaryBlue" /> -->
        <div class="mx-5 mt-12"></div>
        <!-- my title -->
     <div class="py-4 mx-auto my-7">

@@ -1,9 +1,9 @@
 <template>
   <div class="h-full scroll-smooth bg-primaryBlue px-2 flex flex-col">
-    <!-- Top Nav -->
+    <!-- Top Nav --> 
     <!-- <div><NavigationBar class="text-white" /></div> -->
 
-    <!-- <div class="mx-5 mt-16"></div> -->
+    <!-- <div class="mx-5 mt-16"></div> --> 
     <!-- my title -->
     <div class="py-4" id="prevBtn">
       <img
