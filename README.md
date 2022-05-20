@@ -123,7 +123,8 @@ const router = createRouter({
 
 # Firebase Hosting 
 `npm install -g firebase-tools`
-update node first to the latest version as firebase may not work with older verison 
+
+- update node first to the latest version as firebase may not work with older verison 
 ![update node](https://user-images.githubusercontent.com/42699812/169412067-99bb6049-327b-48f5-8e86-06869594aa6d.png)
 
 
