@@ -1,9 +1,11 @@
 <template>
   <div
-    class="z-400 overflow-y-auto py-10 overflow-x-hidden fixed right-0 left-0 z-50 justify-center items-center md:inset-0 h-modal sm:h-full"
-    id="small-modal"
+    class="z-400 overflow-y-auto py-10 h-3/4 overflow-x-hidden w-full fixed right-0 left-0 z-50 justify-center items-center md:inset-0 h-modal sm:h-full"
+    id="large-modal"
+    tabindex="-1"
+    aria-hidden="true"
   >
-    <div class="relative px-4 w-full max-w-md h-full md:h-auto">
+    <div class="relative px-4 w-3/4 md:h-auto">
       <!-- Modal content -->
       <div class="relative bg-white rounded-lg shadow-2xl dark:bg-gray-700">
         <!-- Modal header -->
@@ -11,14 +13,14 @@
           class="flex bg-yellow justify-between items-center p-5 rounded-t border-b dark:border-gray-600"
         >
           <h3 class="text-xl font-medium text-darkBlue dark:text-white">
-            Kindly Enter Details
+            My Approach
           </h3>
           <button
             id="closeButton"
             @click="$emit('closeDialog', true)"
             type="button"
             class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-            data-modal-toggle="small-modal"
+            data-modal-toggle="large-modal"
           >
             <svg
               class="w-7 h-7 bg-white rounded-full p-1"
@@ -35,44 +37,126 @@
           </button>
         </div>
         <!-- Modal body -->
+        <div class="grid grid-cols-3 p-2">
+          <!-- Card 1 -->
 
-        <div class="px-6 py-4 space-y-3">
-          <div class="border rounded-xl border-yellow text-darkBlue">
-            <input
-              v-model="userExactLocation"
-              placeholder="Enter Location Name. eg .. Nairobi CBD, Agha Khan walk"
-              class="p-2 text-ellipsis rounded-2xl h-12 w-full text-center"
+       
+          <div
+            class="transition duration-300 m-4 bg-purpleShade block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+          >
+            <img
+              class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
+              src="src/assets/Logo.svg"
+              alt=""
             />
-          </div>
-        </div>
-        <!-- emergency description -->
-        <div class="px-6 pb-4 space-y-3">
-          <div class="border rounded-xl border-yellow text-darkBlue">
-            <input
-              v-model="userEmergencyDetails"
-              placeholder="Enter emergency Details eg..Building X on fire and there are people inside"
-              class="p-2 text-ellipsis rounded-2xl h-12 w-full text-center"
-            />
-          </div>
-        </div>
-        <!-- request for location -->
-        <div class="px-6 pb-3">
-          <div class="text-gray">
-            Hi there, to make this successful we will need your exactlocation to
-            be able to follow through, hence you maybe asked for your location
-            permissions.
-          </div>
-        </div>
 
-        <!-- request user to select the emergency type to make official request -->
-        <!-- request for location -->
-        <div
-          class="flex -center px-6 py-1 rounded-full mb-2 mx-14 shadow-xl hover:bg-red border border-2 border-yellow bg-maroon w-fit"
-        >
-          <div class="text-white font-bold">
-            Kindly Select Emergency type Needed after
+            <h5
+              class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+             Design think the solution
+            </h5>
+            <p class="font-nunito text-sm text-gray-700 dark:text-gray-400">
+              Here, I conduct intense and diverse reasearch on earlier done or similar solutions, understand their functionalities, striking features ( both negative and positive ). Later come up with my final Design in both functionality and UI/UX
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="block bg-brownShade m-4 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+          >
+           <img
+              class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
+              src="src/assets/Logo.svg"
+              alt=""
+            />
+            <h5
+              class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Low Level Design
+            </h5>
+            <p class="text-sm font-nunito  text-gray-700 dark:text-gray-400">
+              Here, I commence the design of the solution, through curating a well though out low level User Interface with a focus on functionality and positioning of view elements.I use one major tool
+              <span class="underline font-bold"><a href="https://balsamiq.com/">Balsamiq,</a></span> one of the most intuitive tool i have used, in wireframing.
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="block bg-pinkShade m-4 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+          >
+           <img
+              class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
+              src="src/assets/Logo.svg"
+              alt=""
+            />
+            <h5
+              class="mb-2 text-lg  font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              High Level Design
+            </h5>
+            <p class="font-nunito text-sm text-gray-700 dark:text-gray-400">
+              Once the stakeholders of that particular project have approved the low-level design, I now give 'life'
+               to the existing project, through addition of colors( <span class="italic">targeting human emotions</span>  ), beautiful illustrations and 2 major font combinations
+               all guided by the UI/UX fundamentals and <a href="https://material.io/design" class="underline font-bold"> Material Design patterns. </a>
+            </p>
+          </div>
+          <!-- Card 4-->
+          <div
+            class="block bg-greenShade m-4 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+          >
+           <img
+              class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
+              src="src/assets/Logo.svg"
+              alt=""
+            />
+            <h5
+              class="mb-2 text-lg  font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Noteworthy technology acquisitions 2021
+            </h5>
+            <p class="font-nunito text-sm text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+          </div>
+          <!-- Card 5-->
+          <div
+            class=" bg-purpleShade block m-4 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+          >
+           <img
+              class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
+              src="src/assets/Logo.svg"
+              alt=""
+            />
+            <h5
+              class="mb-2 m-4 text-left text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Noteworthy technology acquisitions 2021
+            </h5>
+            <p class="font-nunito text-sm text-gray-700 text-sm text-left dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="bg-brownShade m-4 block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+          >
+           <img
+              class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
+              src="src/assets/Logo.svg"
+              alt=""
+            />
+            <h5
+              class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Noteworthy technology acquisitions 2021
+            </h5>
+            <p class="font-nunito text-sm text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
           </div>
         </div>
+        <!-- End of cards -->
         <!-- Modal footer -->
         <div
           class="flex justify-center items-center p-6 space-x-2 rounded-b border-t border-gray dark:border-gray"
