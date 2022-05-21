@@ -26,9 +26,8 @@
             />
           </div>
           <div class="about text-3xl text-secondaryLightGray font-nunito mb-7">
-            A Student, Educator, Creator and Lover of Life. I Welcome you to
-            experience a snapshot of my dev journey ! A Junior Android
-            developer.
+            A Student,an Educator, a Creator and Lover of Life. I am a Junior Android developer
+            and I Welcome you to view a snapshot of my dev journey and life! 
           </div>
           <button
             class="text-xl text-primaryBlue font-medium rounded transition duration-700 ease-in-out hover:underline hover:underline-offset-8 p-2"

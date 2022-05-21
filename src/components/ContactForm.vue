@@ -86,7 +86,8 @@
           srcset=""
           loading="lazy"
         />
-         <div class="mx-3 my-auto">Through silence that I am able to listen and learn more from others... Thank you for taking your time to view my profile.</div>
+         <div class="mx-3 my-auto capitalize">It is Through silence, that I am able to listen and 
+           learn more from others... Thank you for taking your time to view my profile, I appreciate you.</div>
         </div> 
        </marquee>
   </div>
