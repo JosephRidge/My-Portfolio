@@ -69,6 +69,7 @@
     <About class="h-full" />
     <Blog />
     <ContactFormVue class="h-screen" />
+    <!-- <BuildProcess/> -->
   </div>
 </template>
 
@@ -78,9 +79,10 @@ import WorkPage from "./WorkPage.vue";
 import About from "./About.vue";
 import Blog from "./Blog.vue";
 import ContactFormVue from "./ContactForm.vue";
+import BuildProcess from './BuildProcess.vue'
 export default {
   mixins: [defaultMixins],
-  components: { WorkPage, About, Blog, ContactFormVue },
+  components: { WorkPage, About, Blog, ContactFormVue ,BuildProcess},
   methods: {
     _animate() {
       /*    Animation    */

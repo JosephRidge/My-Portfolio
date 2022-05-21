@@ -10,7 +10,11 @@ module.exports = {
         secondaryLighterBlue:'#3372D2',//set opacity
         primaryGray:'#EEEEEE',
         secondaryLightGray:'#3C3C3C',
-        darkGray:"#3C3D3C"
+        darkGray:"#3C3D3C",
+        greenShade:"#B0D6CE",
+        brownShade:"#FDF0DC",
+        pinkShade:"#FCE1E1",
+        purpleShade:"#EBE0FF"
       },
       backgroundImage: {
         'blue-art': "url('../src/assets/Buebakcground.svg')",
