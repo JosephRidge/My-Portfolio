@@ -10,9 +10,9 @@
       <div class="relative bg-white rounded-lg shadow-2xl dark:bg-gray-700">
         <!-- Modal header -->
         <div
-          class="flex bg-yellow justify-between items-center p-5 rounded-t border-b dark:border-gray-600"
+          class=" flex bg-yellow justify-between items-center p-5 rounded-t border-b dark:border-gray-600"
         >
-          <h3 class="text-xl font-medium text-darkBlue dark:text-white">
+          <h3 class="text-2xl font-nunito   text-darkGray text-darkBlue dark:text-white">
             My Approach
           </h3>
           <button
@@ -40,9 +40,10 @@
         <div class="grid grid-cols-3 p-2">
           <!-- Card 1 -->
 
-       
           <div
-            class="transition duration-300 m-4 bg-purpleShade block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            class="transition ease-in-out duration-300 hover:scale-110
+             m-4 bg-purpleShade hover:border-purpleShade block p-6
+              max-w-sm bg-white rounded-lg border border-gray-200 shadow-md   dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
           >
             <img
               class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
@@ -53,17 +54,23 @@
             <h5
               class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
             >
-             Design think the solution
+              Design think the solution
             </h5>
             <p class="font-nunito text-sm text-gray-700 dark:text-gray-400">
-              Here, I conduct intense and diverse reasearch on earlier done or similar solutions, understand their functionalities, striking features ( both negative and positive ). Later come up with my final Design in both functionality and UI/UX
+              Here, I conduct intense and diverse reasearch on earlier done or
+              similar solutions, understand their functionalities, striking
+              features ( both negative and positive ). Later come up with my
+              final Design in both functionality and UI/UX
             </p>
           </div>
           <!-- Card 2 -->
           <div
-            class="block bg-brownShade m-4 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            class="transition ease-in-out duration-300 hover:scale-110 
+            block bg-brownShade hover:border-brownShade m-4 p-6 max-w-sm
+             bg-white rounded-lg border border-gray-200 shadow-md 
+              dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
           >
-           <img
+            <img
               class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
               src="src/assets/Logo.svg"
               alt=""
@@ -73,74 +80,25 @@
             >
               Low Level Design
             </h5>
-            <p class="text-sm font-nunito  text-gray-700 dark:text-gray-400">
-              Here, I commence the design of the solution, through curating a well though out low level User Interface with a focus on functionality and positioning of view elements.I use one major tool
-              <span class="underline font-bold"><a href="https://balsamiq.com/">Balsamiq,</a></span> one of the most intuitive tool i have used, in wireframing.
+            <p class="text-sm font-nunito text-gray-700 dark:text-gray-400">
+              Here, I commence the design of the solution, through curating a
+              well though out low level User Interface with a focus on
+              functionality and positioning of view elements.I use one major
+              tool
+              <span class="underline font-bold"
+                ><a href="https://balsamiq.com/">Balsamiq,</a></span
+              >
+              one of the most intuitive tool i have used, in wireframing.
             </p>
           </div>
           <!-- Card 3 -->
           <div
-            class="block bg-pinkShade m-4 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            class="transition ease-in-out duration-300 hover:scale-110 block bg-pinkShade hover:border-pinkShade
+             m-4 p-6 max-w-sm bg-white rounded-lg border
+              border-gray-200 shadow-md  
+              dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
           >
-           <img
-              class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
-              src="src/assets/Logo.svg"
-              alt=""
-            />
-            <h5
-              class="mb-2 text-lg  font-bold tracking-tight text-gray-900 dark:text-white"
-            >
-              High Level Design
-            </h5>
-            <p class="font-nunito text-sm text-gray-700 dark:text-gray-400">
-              Once the stakeholders of that particular project have approved the low-level design, I now give 'life'
-               to the existing project, through addition of colors( <span class="italic">targeting human emotions</span>  ), beautiful illustrations and 2 major font combinations
-               all guided by the UI/UX fundamentals and <a href="https://material.io/design" class="underline font-bold"> Material Design patterns. </a>
-            </p>
-          </div>
-          <!-- Card 4-->
-          <div
-            class="block bg-greenShade m-4 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-          >
-           <img
-              class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
-              src="src/assets/Logo.svg"
-              alt=""
-            />
-            <h5
-              class="mb-2 text-lg  font-bold tracking-tight text-gray-900 dark:text-white"
-            >
-              Noteworthy technology acquisitions 2021
-            </h5>
-            <p class="font-nunito text-sm text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
-          </div>
-          <!-- Card 5-->
-          <div
-            class=" bg-purpleShade block m-4 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-          >
-           <img
-              class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
-              src="src/assets/Logo.svg"
-              alt=""
-            />
-            <h5
-              class="mb-2 m-4 text-left text-lg font-bold tracking-tight text-gray-900 dark:text-white"
-            >
-              Noteworthy technology acquisitions 2021
-            </h5>
-            <p class="font-nunito text-sm text-gray-700 text-sm text-left dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
-          </div>
-          <!-- Card 6 -->
-          <div
-            class="bg-brownShade m-4 block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-          >
-           <img
+            <img
               class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
               src="src/assets/Logo.svg"
               alt=""
@@ -148,11 +106,104 @@
             <h5
               class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
             >
-              Noteworthy technology acquisitions 2021
+              High Level Design
             </h5>
             <p class="font-nunito text-sm text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
+              Once the stakeholders of that particular project have approved the
+              low-level design, I now give 'life' to the existing project,
+              through addition of colors(
+              <span class="italic">targeting human emotions</span> ), beautiful
+              illustrations and 2 major font combinations all guided by the
+              UI/UX fundamentals and
+              <a href="https://material.io/design" class="underline font-bold">
+                Material Design patterns.
+              </a>
+            </p>
+          </div>
+          <!-- Card 4-->
+          <div
+            class="transition ease-in-out duration-300 hover:scale-110 
+            block bg-greenShade hover:border-greenShade m-4 p-6 
+            max-w-sm bg-white rounded-lg border 
+            border-gray-200 shadow-md  
+            dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+          >
+            <img
+              class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
+              src="src/assets/Logo.svg"
+              alt=""
+            />
+            <h5
+              class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Version Control
+            </h5>
+            <p class="font-nunito text-sm text-gray-700 dark:text-gray-400">
+              Here, using git tool, I create my version control envrionment,
+              using
+              <a href="https://github.com/" class="underline font-bold">
+                GitHub</a
+              >, I am able to push my code-base to an online repository. Here I
+              create two branches; develop branch and the main branch all new
+              features have their own branch and merged to develop branch.
+              Basically this is where I have the power to grab my Dr.Strange cap
+              and time travel.
+            </p>
+          </div>
+          <!-- Card 5-->
+          <div
+            class="transition ease-in-out duration-300 hover:scale-110 bg-purpleShade hover:border-purpleShade
+             block m-4 p-6 max-w-sm bg-white rounded-lg border border-gray-200
+              shadow-md   dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+          >
+            <img
+              class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
+              src="src/assets/Logo.svg"
+              alt=""
+            />
+            <h5
+              class="mb-2 m-auto text-left text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Prepare my Development Environment
+            </h5>
+            <p
+              class="font-nunito text-sm text-gray-700 text-sm text-left dark:text-gray-400"
+            >
+              Finally I have already set up my Repository and the deisgns are
+              ready, now i create the project, luckily I made a
+              <a
+                href="https://josephridge.medium.com/automating-the-app-creation-process-using-python-60d29cb88c03"
+                class="underline font-bold"
+                >python script</a
+              >
+              (its Public) that automates the process. The script is holds the
+              functionalities of creating project and intializing version
+              control.
+            </p>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="transition ease-in-out duration-300 hover:scale-110
+             bg-brownShade m-4 block p-6 max-w-sm bg-white rounded-lg 
+             border border-gray-200 shadow-md hover:bg-gray  dark:bg-gray-800 hover:border-brownShade dark:border-gray-700 dark:hover:bg-gray-700"
+          >
+            <img
+              class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
+              src="src/assets/Logo.svg"
+              alt=""
+            />
+            <h5
+              class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Build....Build....Maintain
+            </h5>
+            <p class="font-nunito text-sm text-gray-700 dark:text-gray-400">
+              The fun starts, this is where i commence the develpoment. I take a
+              'safe' approach here by assigning each feature its own branch and
+              once a feature is done and tested I merge it to the develop branch
+              later to the main branch. This helps me prevent the " Ohh no, and
+              I just built it.. I should not have added all this code before
+              pushing it.." .
             </p>
           </div>
         </div>
@@ -160,20 +211,15 @@
         <!-- Modal footer -->
         <div
           class="flex justify-center items-center p-6 space-x-2 rounded-b border-t border-gray dark:border-gray"
-        >
-          <button
-            @click="$emit('dangerDetails', emitValues())"
-            type="button"
-            class="shadow hover:text-white w-44 hover:bg-primaryYellow focus:ring-4 focus:ring-yellow transition ease-in-out border border-1 border-primaryYellow font-medium rounded-full text-sm px-5 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Request
-          </button>
+        > 
           <button
             @click="$emit('closeDialog', true)"
             type="button"
-            class="bg-white transition ease-in-out shadow w-44 hover:bg-red hover:text-white focus:ring-4 focus:ring-red rounded-full border border-1 border-red text-sm font-medium px-5 py-1.5 mx-2 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600"
+            class="hover:bg-red-800 hover:text-white transition ease-in-out duration-300 shadow
+             rounded-full border-2 border-red-200 hover:border-red-800 hover:scale-110
+            w-44 hover:bg-red  text-sm  px-5 py-1.5 mx-2  focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600"
           >
-            Cancel
+            Exit
           </button>
         </div>
       </div>
