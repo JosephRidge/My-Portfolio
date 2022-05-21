@@ -2,7 +2,7 @@
   <div class="w-screen h-screen static relative" loading="lazy">
     <!-- top page scroll progress bar -->
     <div class="fixed top-0 left-0 right-0 z-10">
-      <div class="bg-primaryBlue h-2 trasnsition ease-in-out" id="myBar"></div>
+      <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-2 trasnsition ease-in-out" id="myBar"></div>
     </div>
     <!-- background -->
     <div class="transition duration-300 ease-in-out grid grid-cols-2">
