@@ -18,7 +18,7 @@
           </div>
           <div class="name">
             <img
-              src="src/assets/JayR.svg"
+              src="../assets/JayR.svg"
               class="w-80 pb-10 mt-2 transition delay-150 ease-in-out"
               alt="Joseph Ridge logo"
               srcset=""
@@ -42,7 +42,7 @@
       <div class="home bg-blue-art bg-cover h-screen flex">
         <div class="self-center ml-auto mr-auto">
           <img
-            src="src/assets/Logo.svg"
+            src="../assets/Logo.svg"
             class="w-64"
             alt="Joseph Ridge logo"
             srcset=""
@@ -57,7 +57,7 @@
           </div>
           <div>
             <img
-              src="src/assets/Arrow.svg"
+              src="../assets/Arrow.svg"
               class="block ml-2 mr-5 my-3 w-3"
               alt="Arrow Down"
               srcset=""

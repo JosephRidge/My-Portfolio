@@ -4,7 +4,7 @@
       <!-- my title -->
       <div class="flex flex-row">
         <img
-          src="src/assets/Logo.svg"
+          src="../assets/Logo.svg"
           class=" ml-14 h-44 mb-10 "
           alt="My Work logo"
           srcset=""
@@ -59,7 +59,7 @@
           >
             <span class="my-auto mx-2 text-sm 0">Read</span>
             <img
-              src="src/assets/read_more.svg"
+              src="../assets/read_more.svg"
               class="image my-auto mr-2 left-0 w-6"
               alt=""
               srcset=""
@@ -92,13 +92,13 @@ export default {
   data: {
     blogs: [],
     images: [
-      "src/assets/art_3.jpg",
-      "src/assets/art_2.jpg",
-      "src/assets/art.jpg",
-      "src/assets/oranges.jpg",
-      "src/assets/book_on_face.jpg",
-      "src/assets/spiral.jpg",
-      "src/assets/idea.jpg",
+      "../assets/art_3.jpg",
+      "../assets/art_2.jpg",
+      "../assets/art.jpg",
+      "../assets/oranges.jpg",
+      "../assets/book_on_face.jpg",
+      "../assets/spiral.jpg",
+      "../assets/idea.jpg",
     ],
   },
   methods: {
