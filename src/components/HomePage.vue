@@ -105,7 +105,7 @@ export default {
       );
       t1.fromTo(
         name,
-        1.5,
+        1,
         { opacity: "0" },
         { opacity: "1", ease: Power2.easeInOut }
       );
