@@ -12,7 +12,7 @@
         <div
           class=" flex bg-yellow justify-between items-center p-5 rounded-t border-b dark:border-gray-600"
         >
-          <h3 class="text-2xl font-nunito   text-darkGray text-darkBlue dark:text-white">
+          <h3 class="text-2xl font-nunito text-darkGray text-darkBlue dark:text-white">
             My Approach
           </h3>
           <button
@@ -109,15 +109,16 @@
               High Level Design
             </h5>
             <p class="font-nunito text-sm text-gray-700 dark:text-gray-400">
-              Once the stakeholders of that particular project have approved the
-              low-level design, I now give 'life' to the existing project,
+              At this point the low-level design has been approved. I now switch to
+               <a href="https://www.figma.com/" class="underline font-bold">Figma</a> 
+             and give 'life' to the existing project,
               through addition of colors(
               <span class="italic">targeting human emotions</span> ), beautiful
               illustrations and 2 major font combinations all guided by the
               UI/UX fundamentals and
               <a href="https://material.io/design" class="underline font-bold">
                 Material Design patterns.
-              </a>
+              </a> 
             </p>
           </div>
           <!-- Card 4-->
