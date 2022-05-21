@@ -1,9 +1,9 @@
 <template>
-  <div class="h-screen w-screen flex flex-col" loading="lazy">
-    <NavigationBar class="text-primaryBlue" />
-    <div class="mx-5 mt-12"></div>
-    <!-- my title -->
-    <div class="py-4 mx-auto mt-7 mb-3">
+  <div class="h-screen w-screen  flex flex-col" loading="lazy">
+        <!-- <NavigationBar class="text-primaryBlue" /> -->
+       <div class="mx-5 mt-12"></div>
+       <!-- my title -->
+    <div class="py-4 mx-auto my-7">
       <img
         src="src/assets/AboutME.svg"
         class="mx-32 w-56 h-14"

@@ -12,6 +12,18 @@
       <div
         class="flex flex-col h-auto my-auto mx-auto p-4 rounded-lg border-2 border-primaryBlue"
       >
+       <div class="my-3">
+          <span class="font-light font-roboto text-lg mx-1"
+            >Full Names :
+          </span>
+          <input
+            v-model="userName"
+            type="text"
+            id="username"
+            class="username w-full bg-gray-200 m-1 p-2 rounded appearance-none border-2 focus:outline-none focus:bg-white"
+            placeholder="email / phone number"
+          />
+        </div>
         <div class="my-3">
           <span class="font-light font-roboto text-lg mx-1"
             >Email / Phone Number :
@@ -46,7 +58,7 @@
       </div>
       <div class="flex my-10 mx-auto w-1/2">
         <div>
-          <a :href=github target="_blank"
+          <a :href="github" target="_blank"
             ><img
               src="src/assets/Github.svg"
               class="ml-16 w-10"
@@ -56,7 +68,7 @@
           /></a>
         </div>
         <div>
-          <a :href=linkedin target="_blank"
+          <a :href="linkedin" target="_blank"
             ><img
               src="src/assets/linkedin.svg"
               class="w-10 mx-10"
@@ -66,7 +78,7 @@
           /></a>
         </div>
         <div>
-          <a :href=twitter target="_blank">
+          <a :href="twitter" target="_blank">
             <img
               src="src/assets/twitter.svg"
               class="w-12 my-auto"
@@ -77,26 +89,30 @@
         </div>
       </div>
     </div>
-    <marquee class="bottom-0 py-4 font-nunito w-full bg-primaryBlue
-     hover:text-white transition ease-in-out text-lg  " behavior=" " direction="right"> 
-     <div class="flex" >  <img
+    <marquee
+      class="bottom-0 py-4 font-nunito w-full bg-primaryBlue hover:text-white transition ease-in-out text-lg"
+      behavior=" "
+      direction="right"
+    >
+      <div class="flex">
+        <img
           src="src/assets/Logo.svg"
-          class="w-10 "
+          class="w-10"
           alt="My Work logo"
           srcset=""
           loading="lazy"
-        />
+        /> 
          <div class="mx-3 my-auto capitalize">It is Through silence, that I am able to listen and 
            learn more from others... Thank you for taking your time to view my profile, I appreciate you.</div>
         </div> 
-       </marquee>
+       </marquee> 
   </div>
 </template>
 
 <script>
 import { getDatabase, ref, push } from "firebase/database";
 import { initializeApp } from "firebase/app";
-import defaultMixins from "../mixins/defaultMixins"; 
+import defaultMixins from "../mixins/defaultMixins";
 
 export default {
   mixins: [defaultMixins],
@@ -106,6 +122,8 @@ export default {
       let contactDOM = document.getElementById("contact");
       let message = this.message;
       let messageDOM = document.getElementById("message");
+      let userName = this.userName;
+      let userNameDOM = document.getElementById("username")
       const firebaseConfig = {
         apiKey: this.apiKey,
         authDomain: this.authDomain,
@@ -120,11 +138,13 @@ export default {
       const db = getDatabase();
       const dbRef = ref(db, "messages");
       push(dbRef, {
+        name:userName,
         contact: contact,
         message: message,
       });
       contactDOM.value = "";
       messageDOM.value = "";
+      userNameDOM.value = "";
     },
   },
 };
