@@ -137,3 +137,5 @@ const router = createRouter({
 
 * [Firebase with Vuejs](https://learnvue.co/2021/06/a-vue-firebase-authentication-tutorial-vue-3-and-firebase/#firebase-authentication-in-vue)
 
+* [Firebase Hosting](https://youtu.be/P0x0LmiknJc)
+
