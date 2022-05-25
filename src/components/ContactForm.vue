@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-screen my-10">
     <img
-      src="src/assets/ContactMe.svg"
+      src="../assets/ContactMe.svg"
       class="mx-auto my-3"
       alt="Contact me Page"
     />
@@ -12,6 +12,18 @@
       <div
         class="flex flex-col h-auto my-auto mx-auto p-4 rounded-lg border-2 border-primaryBlue"
       >
+       <div class="my-3">
+          <span class="font-light font-roboto text-lg mx-1"
+            >Full Names :
+          </span>
+          <input
+            v-model="userName"
+            type="text"
+            id="username"
+            class="username w-full bg-gray-200 m-1 p-2 rounded appearance-none border-2 focus:outline-none focus:bg-white"
+            placeholder="email / phone number"
+          />
+        </div>
         <div class="my-3">
           <span class="font-light font-roboto text-lg mx-1"
             >Email / Phone Number :
@@ -48,7 +60,7 @@
         <div>
           <a :href="github" target="_blank"
             ><img
-              src="src/assets/Github.svg"
+              src="../assets/Github.svg"
               class="ml-16 w-10"
               alt="My Work logo"
               srcset=""
@@ -58,7 +70,7 @@
         <div>
           <a :href="linkedin" target="_blank"
             ><img
-              src="src/assets/linkedin.svg"
+              src="../assets/linkedin.svg"
               class="w-10 mx-10"
               alt="My Work logo"
               srcset=""
@@ -68,7 +80,7 @@
         <div>
           <a :href="twitter" target="_blank">
             <img
-              src="src/assets/twitter.svg"
+              src="../assets/twitter.svg"
               class="w-12 my-auto"
               alt="My Work logo"
               srcset=""
@@ -84,18 +96,16 @@
     >
       <div class="flex">
         <img
-          src="src/assets/Logo.svg"
+          src="../assets/Logo.svg"
           class="w-10"
           alt="My Work logo"
           srcset=""
           loading="lazy"
-        />
-        <div class="mx-3 my-auto">
-          Through silence, I am able to listen and learn more from others...
-          Thank you for taking your time to view my profile.
-        </div>
-      </div>
-    </marquee>
+        /> 
+         <div class="mx-3 my-auto capitalize">It is Through silence, that I am able to listen and 
+           learn more from others... Thank you for taking your time to view my profile, I appreciate you.</div>
+        </div> 
+       </marquee> 
   </div>
 </template>
 
@@ -112,6 +122,8 @@ export default {
       let contactDOM = document.getElementById("contact");
       let message = this.message;
       let messageDOM = document.getElementById("message");
+      let userName = this.userName;
+      let userNameDOM = document.getElementById("username")
       const firebaseConfig = {
         apiKey: this.apiKey,
         authDomain: this.authDomain,
@@ -126,11 +138,13 @@ export default {
       const db = getDatabase();
       const dbRef = ref(db, "messages");
       push(dbRef, {
+        name:userName,
         contact: contact,
         message: message,
       });
       contactDOM.value = "";
       messageDOM.value = "";
+      userNameDOM.value = "";
     },
   },
 };

@@ -108,9 +108,27 @@ const router = createRouter({
 *Error* enocuntered amid download : 
 ![Screenshot at 2022-05-08 13-47-15](https://user-images.githubusercontent.com/42699812/167292586-271ae506-f11b-4905-a809-a6fbd5672193.png)
 
+`npm install -g firebase-tools`
+![Screenshot at 2022-05-20 01-14-48](https://user-images.githubusercontent.com/42699812/169413181-b21b9fb9-f253-4675-bf8c-9c78e9a0f4af.png)
+
+`firebase login`
+
+![Screenshot at 2022-05-20 01-23-25](https://user-images.githubusercontent.com/42699812/169414148-51d20bbb-bef9-42cb-a9a6-78cc21978517.png)
+
+![Screenshot at 2022-05-20 01-25-24](https://user-images.githubusercontent.com/42699812/169414262-13fbb412-bcdc-4660-857f-6e8fa6e0c8a3.png)
+
 ## Solution 
 ![Screenshot at 2022-05-08 14-05-05](https://user-images.githubusercontent.com/42699812/167293246-e5fdf7da-390c-49b2-9031-d945d8ffa8f3.png)
 
+
+# Firebase Hosting 
+`npm install -g firebase-tools`
+
+- update node first to the latest version as firebase may not work with older verison 
+![update node](https://user-images.githubusercontent.com/42699812/169412067-99bb6049-327b-48f5-8e86-06869594aa6d.png)
+
+- Successful setup 
+![firebasedeploy](https://user-images.githubusercontent.com/42699812/170370389-ec5511f0-0e85-4d00-8ccb-915916929ec5.png
 
 # Usefull Links : 
 * [Setting up your Code formatter - Prettier by kiran.jasvanee-Medium](https://medium.com/@kiran.jasvanee/prettier-auto-formatting-in-visual-studio-code-beab1c026b13) 
@@ -118,3 +136,4 @@ const router = createRouter({
 * [Setting Up a formatter and a linter](https://vueschool.io/articles/vuejs-tutorials/eslint-and-prettier-with-vite-and-vue-js-3/)
 
 * [Firebase with Vuejs](https://learnvue.co/2021/06/a-vue-firebase-authentication-tutorial-vue-3-and-firebase/#firebase-authentication-in-vue)
+

@@ -2,7 +2,7 @@
   <div class="w-screen h-screen static relative" loading="lazy">
     <!-- top page scroll progress bar -->
     <div class="fixed top-0 left-0 right-0 z-10">
-      <div class="bg-primaryBlue h-2 trasnsition ease-in-out" id="myBar"></div>
+      <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-2 trasnsition ease-in-out" id="myBar"></div>
     </div>
     <!-- background -->
     <div class="transition duration-300 ease-in-out grid grid-cols-2">
@@ -18,7 +18,7 @@
           </div>
           <div class="name">
             <img
-              src="src/assets/JayR.svg"
+              src="../assets/JayR.svg"
               class="w-80 pb-10 mt-2 transition delay-150 ease-in-out"
               alt="Joseph Ridge logo"
               srcset=""
@@ -26,9 +26,8 @@
             />
           </div>
           <div class="about text-3xl text-secondaryLightGray font-nunito mb-7">
-            A Student, Educator, Creator and Lover of Life. I Welcome you to
-            experience a snapshot of my dev journey ! A Junior Android
-            developer.
+            A Student,an Educator, a Creator and Lover of Life. I am a Junior Android developer
+            and I Welcome you to view a snapshot of my dev journey and life! 
           </div>
           <button
             class="text-xl text-primaryBlue font-medium rounded transition duration-700 ease-in-out hover:underline hover:underline-offset-8 p-2"
@@ -42,7 +41,7 @@
       <div class="home bg-blue-art bg-cover h-screen flex">
         <div class="self-center ml-auto mr-auto">
           <img
-            src="src/assets/Logo.svg"
+            src="../assets/Logo.svg"
             class="w-64"
             alt="Joseph Ridge logo"
             srcset=""
@@ -57,7 +56,7 @@
           </div>
           <div>
             <img
-              src="src/assets/Arrow.svg"
+              src="../assets/Arrow.svg"
               class="block ml-2 mr-5 my-3 w-3"
               alt="Arrow Down"
               srcset=""
@@ -70,6 +69,7 @@
     <About class="h-full" />
     <Blog />
     <ContactFormVue class="h-screen" />
+    <!-- <BuildProcess/> -->
   </div>
 </template>
 
@@ -79,9 +79,10 @@ import WorkPage from "./WorkPage.vue";
 import About from "./About.vue";
 import Blog from "./Blog.vue";
 import ContactFormVue from "./ContactForm.vue";
+import BuildProcess from './BuildProcess.vue'
 export default {
   mixins: [defaultMixins],
-  components: { WorkPage, About, Blog, ContactFormVue },
+  components: { WorkPage, About, Blog, ContactFormVue ,BuildProcess},
   methods: {
     _animate() {
       /*    Animation    */

@@ -19,7 +19,7 @@
           >
             <div class=" ">
               <img
-                src="src/assets/projects/greensoko-feature-graphic.png"
+                src="../assets/projects/greensoko-feature-graphic.png"
                 class="rounded "
                 alt=" Project Logo"
                 srcset=""
