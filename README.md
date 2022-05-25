@@ -1,3 +1,8 @@
+
+# Note
+
+ - Thre exists a number of branches , that once completed are meregd to the develop branch and after testing they are finaly merged to the main brancg which is dedicated for production. At aany given point the branches will always be merged to the develop branch
+
 # [Vue 3 + Vite](https://vitejs.dev/guide/#trying-vite-online)
 
 installation :
