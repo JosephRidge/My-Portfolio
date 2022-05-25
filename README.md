@@ -127,7 +127,8 @@ const router = createRouter({
 - update node first to the latest version as firebase may not work with older verison 
 ![update node](https://user-images.githubusercontent.com/42699812/169412067-99bb6049-327b-48f5-8e86-06869594aa6d.png)
 
-
+- Successful setup 
+![firebasedeploy](https://user-images.githubusercontent.com/42699812/170370389-ec5511f0-0e85-4d00-8ccb-915916929ec5.png
 
 # Usefull Links : 
 * [Setting up your Code formatter - Prettier by kiran.jasvanee-Medium](https://medium.com/@kiran.jasvanee/prettier-auto-formatting-in-visual-studio-code-beab1c026b13) 
@@ -135,3 +136,4 @@ const router = createRouter({
 * [Setting Up a formatter and a linter](https://vueschool.io/articles/vuejs-tutorials/eslint-and-prettier-with-vite-and-vue-js-3/)
 
 * [Firebase with Vuejs](https://learnvue.co/2021/06/a-vue-firebase-authentication-tutorial-vue-3-and-firebase/#firebase-authentication-in-vue)
+
