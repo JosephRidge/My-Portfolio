@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-screen my-10">
     <img
-      src="src/assets/ContactMe.svg"
+      src="../assets/ContactMe.svg"
       class="mx-auto my-3"
       alt="Contact me Page"
     />
@@ -60,7 +60,7 @@
         <div>
           <a :href="github" target="_blank"
             ><img
-              src="src/assets/Github.svg"
+              src="../assets/Github.svg"
               class="ml-16 w-10"
               alt="My Work logo"
               srcset=""
@@ -70,7 +70,7 @@
         <div>
           <a :href="linkedin" target="_blank"
             ><img
-              src="src/assets/linkedin.svg"
+              src="../assets/linkedin.svg"
               class="w-10 mx-10"
               alt="My Work logo"
               srcset=""
@@ -80,7 +80,7 @@
         <div>
           <a :href="twitter" target="_blank">
             <img
-              src="src/assets/twitter.svg"
+              src="../assets/twitter.svg"
               class="w-12 my-auto"
               alt="My Work logo"
               srcset=""
@@ -96,7 +96,7 @@
     >
       <div class="flex">
         <img
-          src="src/assets/Logo.svg"
+          src="../assets/Logo.svg"
           class="w-10"
           alt="My Work logo"
           srcset=""

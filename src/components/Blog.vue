@@ -1,17 +1,17 @@
 <template>
-  <div class="h-full w-screen flex flex-col" loading="lazy">
-    <div class="image  bg-darkGray ">
+  <div class="h-full w-screen flex flex-col" loading="lazy" type="module">
+    <div class="image bg-darkGray">
       <!-- my title -->
       <div class="flex flex-row">
         <img
           src="../assets/Logo.svg"
-          class=" ml-14 h-44 mb-10 "
+          class="ml-14 h-44 mb-10"
           alt="My Work logo"
           srcset=""
           loading="lazy"
         />
         <div
-          class=" capitalize text-5xl text-white font-light mx-auto my-auto pt-auto"
+          class="capitalize text-5xl text-white font-light mx-auto my-auto pt-auto"
         >
           Some of My simplified Technical pieces
         </div>
@@ -20,42 +20,40 @@
     <!-- <NavigationBar class="text-white" /> -->
     <!-- <AsyncBlogItems/> -->
     <!-- Blogs Start -->
-    <div class="image bg-gray-50 blog grid grid-cols-3 mb-16 mx-16 justify-center overflow-y-auto">
+    <div
+      class="image bg-gray-50 blog grid grid-cols-3 mb-16 mx-16 justify-center overflow-y-auto"
+    >
       <div
         v-for="item in blogs"
         :key="item.id"
         loading="lazy"
         class="blog border-2 rounded-xl shadow m-10 p-4 flex flex-col bg-white shadow-xl transition eas-in-out duration-500"
       >
-        <div class="flex flex-row" loading="lazy">
+        <div class="flex flex-row" loading="lazy"> <!-- :src="['../assets/art_2.jpg','../assets/art_3.jpg','../assets/book_on_face.jpg','src/assets/articles.jpg'][Math.floor(Math.random() * (3 - 0 + 1) + 0)]" -->
+        
           <img
-            :src="images[Math.floor(Math.random() * (6 - 0 + 1) + 0)]"
-            alt="type writer image"
+
+            src="../assets/oranges.jpg"  
+            alt="Spiral art"
             class="magniflier h-24 w-28 rounded-full bg-cover bg-cent my-auto"
-            srcset="Photo by Markus Winkler: https://www.pexels.com/photo/close-up-shot-of-a-typewriter-4160066/"
             loading="lazy"
           />
-          <div class="flex flex-col h-36  text-ellipsis ">
+          <div class="flex flex-col h-36 text-ellipsis">
             <div
               class="font-nunito text-left text-lg text-darkGray font-roboto font-regular mx-6"
             >
               {{ item.name }}
             </div>
             <div
-              class=" overflow-auto font-nunito text-left text-sm text-secondaryLightGray font-light font-nunito mx-6 mb-2"
+              class="overflow-auto font-nunito text-left text-sm text-secondaryLightGray font-light font-nunito mx-6 mb-2"
             >
-            {{ item.description }}
+              {{ item.description }}
             </div>
           </div>
         </div>
         <a :href="item.link" class="my-2" target="_blank" draggable=" ">
           <div
-            class="flex py-1 bg-darkGray
-              rounded-full px-3 text-white 
-              font-nunito text-center w-max
-              mx-auto hover:cursor-pointer 
-              font-bold hover: hover:scale-110  
-              hover:shadow-xl transition ease-in-out"
+            class="flex py-1 bg-darkGray rounded-full px-3 text-white font-nunito text-center w-max mx-auto hover:cursor-pointer font-bold hover: hover:scale-110 hover:shadow-xl transition ease-in-out"
           >
             <span class="my-auto mx-2 text-sm 0">Read</span>
             <img
@@ -92,13 +90,15 @@ export default {
   data: {
     blogs: [],
     images: [
-      "../assets/art_3.jpg",
-      "../assets/art_2.jpg",
-      "../assets/art.jpg",
-      "../assets/oranges.jpg",
-      "../assets/book_on_face.jpg",
-      "../assets/spiral.jpg",
-      "../assets/idea.jpg",
+      "/home/josephridge/Documents/Web Development/Porfolio/src/assets/art_3.jpg",
+ 
+     "/assets/art_2.jpg", 
+       "/assets/art_3.jpg",
+        "/oranges.jpg",
+       "book_on_face.jpg",
+      // "./src/assets/spiral.jpg",
+      // "../src/assets/idea.jpg",
+      "/read_more.svg",
     ],
   },
   methods: {

@@ -14,7 +14,6 @@
             :src="images[Math.floor(Math.random() * (6 - 0 + 1) + 0)]"
             alt="type writer image"
             class="magniflier h-24 w-28 rounded-full bg-cover bg-cent my-auto"
-            srcset="Photo by Markus Winkler: https://www.pexels.com/photo/close-up-shot-of-a-typewriter-4160066/"
             loading="lazy"
           />
           <div class="flex flex-col">
@@ -36,7 +35,7 @@
           >
             <span class="my-auto mx-2 text-sm 0">Read</span>
             <img
-              src="src/assets/read_more.svg"
+              src="../assets/read_more.svg"
               class="my-auto mr-2 left-0 w-6"
               alt=""
               srcset=""
@@ -60,10 +59,10 @@ export default {
   data: {
     blogs: [],
     images: [
-      "src/assets/art_3.jpg",
-      "src/assets/art_4.jpg",
-      "src/assets/art_2.jpg",
-      "src/assets/oranges.jpg",
+      "assets/art_3.jpg",
+      "art_4.jpg",
+      "/src/assets/art_2.jpg",
+      "../src/assets/oranges.jpg",
       "src/assets/book_on_face.jpg",
       "src/assets/spiral.jpg",
       "src/assets/idea.jpg",
