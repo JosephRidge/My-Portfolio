@@ -7,7 +7,7 @@
     <!-- my title -->
     <div class="py-4" id="prevBtn">
       <img
-        src="src/assets/MyWork.svg"
+        src="../assets/MyWork.svg"
         class="mx-32 w-56 h-14"
         alt="My Work logo"
         srcset=""
@@ -32,7 +32,7 @@
 
         <!-- <div class=" z-10 bg-red-300 p-2 m-2"> -->
         <img
-          src="src/assets/leftArrow.svg"
+          src="../assets/leftArrow.svg"
           class="-translate-y-2/4 -translate-x-2/4 
           mx-6 my-auto h-10 w-12 swiper-button-prev 
           hover:shadow-xl hover:cursor-pointer transition
@@ -45,7 +45,7 @@
         <!-- right arrow -->
         <div class="my-auto">
           <img
-            src="src/assets/rightArrow.svg"
+            src="../assets/rightArrow.svg"
             class="my-auto -translate-y-2/4 translate-x-2/4 h-10 w-12 mx-6 swiper-button-next hover:shadow-xl hover:cursor-pointer transition ease-in-out hover:scale-125 rounded-full"
             alt="right pointing arrow logo"
             srcset=""

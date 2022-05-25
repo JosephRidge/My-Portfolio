@@ -5,7 +5,7 @@
        <!-- my title -->
     <div class="py-4 mx-auto my-7">
       <img
-        src="src/assets/AboutME.svg"
+        src="../assets/AboutME.svg"
         class="mx-32 w-56 h-14"
         alt="My Work logo"
         srcset=""
