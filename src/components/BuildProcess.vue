@@ -47,7 +47,7 @@
           >
             <img
               class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
-              src="src/assets/Logo.svg"
+              src="../assets/Logo.svg"
               alt=""
             />
 
@@ -72,7 +72,7 @@
           >
             <img
               class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
-              src="src/assets/Logo.svg"
+              src="../assets/Logo.svg"
               alt=""
             />
             <h5
@@ -100,7 +100,7 @@
           >
             <img
               class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
-              src="src/assets/Logo.svg"
+              src="../assets/Logo.svg"
               alt=""
             />
             <h5
@@ -131,7 +131,7 @@
           >
             <img
               class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
-              src="src/assets/Logo.svg"
+              src="../assets/Logo.svg"
               alt=""
             />
             <h5
@@ -159,7 +159,7 @@
           >
             <img
               class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
-              src="src/assets/Logo.svg"
+              src="../assets/Logo.svg"
               alt=""
             />
             <h5
@@ -190,7 +190,7 @@
           >
             <img
               class="object-cover w-7 rounded-t-lg md:rounded-none md:rounded-l-lg"
-              src="src/assets/Logo.svg"
+              src="../assets/Logo.svg"
               alt=""
             />
             <h5
